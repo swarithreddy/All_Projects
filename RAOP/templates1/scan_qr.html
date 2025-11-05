@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan QR Code for {{ subject }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Scan QR Code for {{ subject }}</h2>
+        <p>Present any QR code to the camera to mark attendance.</p>
+        <form action="{{ url_for('scan_qr') }}" method="POST">
+            <button type="submit">Scan QR Code</button>
+        </form>
+    </div>
+</body>
+</html>

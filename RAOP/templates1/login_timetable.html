@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Timetable</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="login-container" id="login-container">
+    <h1>User Login</h1>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">LOGIN</button>
+    </form>
+</div>
+
+<div class="timetable-container" id="timetable-container" style="display:none;">
+    <h2>VIDYA JYOTHI INSTITUTE OF TECHNOLOGY</h2>
+    <p>Department of Computer Science & Engineering</p>
+    <p>Sec: CSE-C | Year/Sem: II - II | Room No: N206</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DAY</th>
+                <th>9:20 - 10:10</th>
+                <th>10:10 - 11:00</th>
+                <th>11:00 - 11:50</th>
+                <th>11:50 - 12:40</th>
+                <th>12:40 - 1:30</th>
+                <th>1:30 - 2:20</th>
+                <th>2:20 - 3:10</th>
+                <th>3:10 - 4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="day-row" data-day="MON">
+                <td>MON</td>
+                <td><button onclick="selectSubject('DAA')">DAA</button></td>
+                <td><button onclick="selectSubject('OOPJ')">OOPJ</button></td>
+                <td><button onclick="selectSubject('SE')">SE</button></td>
+                <td><button onclick="selectSubject('PC')">PC</button></td>
+                <td rowspan="6">LUNCH</td>
+                <td><button onclick="selectSubject('NODEJS')">NODEJS</button></td>
+                <td><button onclick="selectSubject('NODEJS')">NODEJS</button></td>
+                <td><button onclick="selectSubject('NODEJS')">NODEJS</button></td>
+            </tr>
+            <tr class="day-row" data-day="TUE">
+                <td>TUE</td>
+                <td><button onclick="selectSubject('IAI')">IAI</button></td>
+                <td><button onclick="selectSubject('PLACEMENT')">PLACEMENT</button></td>
+                <td><button onclick="selectSubject('PLACEMENT')">PLACEMENT</button></td>
+                <td><button onclick="selectSubject('PLACEMENT')">PLACEMENT</button></td>
+                <td><button onclick="selectSubject('OS')">OS</button></td>
+                <td><button onclick="selectSubject('DAA')">DAA</button></td>
+                <td><button onclick="selectSubject('OOPJ')">OOPJ</button></td>
+            </tr>
+            <tr class="day-row" data-day="WED">
+                <td>WED</td>
+                <td><button onclick="selectSubject('OS')">OS</button></td>
+                <td><button onclick="selectSubject('OOPJ LAB')">OOPJ LAB</button></td>
+                <td><button onclick="selectSubject('OOPJ LAB')">OOPJ LAB</button></td>
+                <td><button onclick="selectSubject('OOPJ LAB')">OOPJ LAB</button></td>
+                <td><button onclick="selectSubject('Assessment')">Assessment</button></td>
+                <td><button onclick="selectSubject('RAOP')">RAOP</button></td>
+                <td><button onclick="selectSubject('RAOP')">RAOP</button></td>
+            </tr>
+            <tr class="day-row" data-day="THU">
+                <td>THU</td>
+                <td><button onclick="selectSubject('DAA')">DAA</button></td>
+                <td><button onclick="selectSubject('OS')">OS</button></td>
+                <td><button onclick="selectSubject('IAI')">IAI</button></td>
+                <td><button onclick="selectSubject('SE')">SE</button></td>
+                <td><button onclick="selectSubject('OS LAB')">OS LAB</button></td>
+                <td><button onclick="selectSubject('OS LAB')">OS LAB</button></td>
+                <td><button onclick="selectSubject('OS LAB')">OS LAB</button></td>
+            </tr>
+            <tr class="day-row" data-day="FRI">
+                <td>FRI</td>
+                <td><button onclick="selectSubject('SE')">SE</button></td>
+                <td><button onclick="selectSubject('IAI')">IAI</button></td>
+                <td><button onclick="selectSubject('DAA')">DAA</button></td>
+                <td><button onclick="selectSubject('OOPJ')">OOPJ</button></td>
+                <td><button onclick="selectSubject('OS')">OS</button></td>
+                <td><button onclick="selectSubject('DAA')">DAA</button></td>
+                <td><button onclick="selectSubject('SE')">SE</button></td>
+            </tr>
+            <tr class="day-row" data-day="SAT">
+                <td>SAT</td>
+                <td><button onclick="selectSubject('OOPJ')">OOPJ</button></td>
+                <td><button onclick="selectSubject('SE')">SE</button></td>
+                <td><button onclick="selectSubject('IAI')">IAI</button></td>
+                <td><button onclick="selectSubject('OS')">OS</button></td>
+                <td><button onclick="selectSubject('OOPJ')">OOPJ</button></td>
+                <td><button onclick="selectSubject('PC')">PC</button></td>
+                <td><button onclick="selectSubject('REMEDIAL')">REMEDIAL</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="subjectForm" action="/verify" method="POST" style="display:none;">
+        <input type="hidden" id="subjectInput" name="subject">
+        <button type="submit">Proceed to Face Verification</button>
+    </form>
+
+    <button class="logout-btn" onclick="logout()">LOGOUT</button>
+</div>
+
+<script>
+const loginForm = document.getElementById('loginForm');
+const loginContainer = document.getElementById('login-container');
+const timetableContainer = document.getElementById('timetable-container');
+const subjectForm = document.getElementById('subjectForm');
+const subjectInput = document.getElementById('subjectInput');
+
+loginForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    loginContainer.style.display = 'none';
+    timetableContainer.style.display = 'block';
+});
+
+function selectSubject(subjectName) {
+    subjectForm.style.display = 'block';
+    subjectInput.value = subjectName;
+}
+
+function logout() {
+    timetableContainer.style.display = 'none';
+    loginContainer.style.display = 'block';
+}
+
+// Automatically show only today's row
+document.addEventListener('DOMContentLoaded', () => {
+    const daysMap = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+    const today = new Date().getDay();
+    const todayStr = daysMap[today];
+
+    const rows = document.querySelectorAll('.day-row');
+    rows.forEach(row => {
+        if (row.getAttribute('data-day') !== todayStr) {
+            row.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
