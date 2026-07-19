@@ -1,0 +1,84 @@
+SafeRide – Women’s Safety Smart Band
+Slide 1 – Title
+
+Title: SafeRide – Women’s Safety Smart Band
+Subtitle: Empowering women’s safety through smart wearable technology
+Visuals: A smart band, women traveling safely, tech & safety theme
+
+Slide 2 – Problem
+
+Heading: The Problem
+Points:
+
+Women’s safety during travel, especially at night, is a major concern in India.
+
+In emergencies, reaching for a phone isn’t always possible.
+
+Need for a quick-response wearable that instantly alerts family and authorities.
+Visuals: Concerned woman, unsafe travel scenario, emergency icon
+
+Slide 3 – Solution
+
+Heading: The SafeRide Solution
+Points:
+
+Smart wearable band ensuring women’s safety.
+
+SOS button sends real-time alerts to registered contacts and police.
+
+Tracks GPS location and monitors heartbeat for stress detection.
+
+Mobile app for live tracking and emergency response.
+Visuals: Smart band + phone app interface + GPS tracking visuals
+
+Slide 4 – Key Impact
+
+Heading: Impact and Benefits
+Points:
+
+Enables rapid emergency response.
+
+Builds confidence for solo female travelers.
+
+Reduces response time during distress.
+
+Promotes smart tech adoption for public safety.
+Visuals: Women feeling safe, emergency response icons
+
+Slide 5 – Technology Used
+
+Heading: Core Technology Stack
+Points:
+
+Arduino / ESP32 microcontroller
+
+GPS & GSM modules for alerts and location
+
+Heartbeat sensor for panic detection
+
+Rechargeable battery (24-hour backup)
+
+Android app for real-time monitoring
+Visuals: Circuit board, sensors, app dashboard
+
+Slide 6 – Funding Utilization (₹5 Lakh)
+
+Heading: How the Funding Will Be Used
+Breakdown:
+
+₹2L – Prototype design & wearable development
+
+₹1.5L – Mobile app and cloud dashboard
+
+₹1L – Pilot testing in colleges and workplaces
+
+₹0.5L – Marketing, awareness, and maintenance
+Visuals: Pie chart or bar chart showing fund allocation
+
+Slide 7 – Vision
+
+Heading: Our Vision
+Quote:
+
+“To create a safer environment for women through smart technology — empowering them to travel freely, confidently, and securely.”
+Visuals: Women smiling while traveling, smart safety concept

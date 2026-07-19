@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<emp xmlns="http://www.eswar.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.eswar.com SchemaEmp.xsd">
+
+	<empno>1201</empno>
+	<empname>eswar</empname>
+	<empsal>300.50</empsal>
+	<dept>IT</dept>
+</emp>

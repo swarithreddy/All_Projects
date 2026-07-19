@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breeds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Dog Breeds Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar-container">
+                <input type="text" id="searchBox" class="search-bar" placeholder="Search...">
+                <button onclick="toggleSearch()">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="background-animation"></div>
+        <div class="container">
+            <div class="breed" data-aos="fade-up">
+                <img src="golden_retriever.png" alt="Golden Retriever">
+                <h2>Golden Retriever</h2>
+                <p>The Golden Retriever is a friendly, intelligent, and devoted dog.</p>
+            </div>
+            <div class="breed" data-aos="fade-up" data-aos-delay="100">
+                <img src="bulldog.png" alt="Bulldog">
+                <h2>Bulldog</h2>
+                <p>Bulldogs are gentle, affectionate, and courageous with a distinct look.</p>
+            </div>
+            <div class="breed" data-aos="fade-up" data-aos-delay="200">
+                <img src="german_shepherd.png" alt="German Shepherd">
+                <h2>German Shepherd</h2>
+                <p>The German Shepherd is confident, courageous, and a keenly intelligent dog.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="instagram.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Contact us at: <a href="mailto:info@dogbreeds.com">info@dogbreeds.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleSearch() {
+            const searchBox = document.getElementById('searchBox');
+            if (searchBox.style.display === 'block') {
+                searchBox.style.display = 'none';
+            } else {
+                searchBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

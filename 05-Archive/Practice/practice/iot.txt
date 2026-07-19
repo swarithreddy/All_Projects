@@ -1,0 +1,173 @@
+an earth quake system
+seismograph sensor
+info gather -- internet to gather 
+data base to gather
+bridging sensor give data server gather internet medium 
+IOT protocol and architecture used to achieve this inject data to internet and transmit to server
+data science to analyse data and ml to predict earthquake 
+
+
+sudden rise -- due to fiber optic cable usage
+
+road map
+1.sensor -- physical data to electronic data or vice verse (i/o devices) can't connect to internet 
+2.iot hardware -- make the data packet from sensor signal like raspberry pi stm32()
+devices which can't connect to internet we use this hardware to connect like radio transmitter or antennas
+3.comm channel -- data is injected to internet 
+4.cloud service -- find cloud by a specific script data reaches cloud process data (aiml or web or other technology)
+5.end user -- human or AI 
+
+cse -- soul 
+ece/eee -- hardware
+
+
+***SENSOR***
+
+CLASSSIFICATION
+1 Based on the Type of Input
+3 Based on Material
+5 Based on the Type of Output
+2 Based on the Method of Sensing
+4. Based on Applications
+
+TYPE OF IOT SENSOR
+Temperature
+Gyroscope
+sensors
+Proximity
+Gas
+Pressure
+Image
+
+BASED ON TYPE OF INPUT
+
+A. Thermal Sensors
+   Thermocouples: Measure temperature using the junction of two different metals.
+	Resistance Temperature Detectors (RTDs): Use the resistance change in metals to 	measure
+	temperature.
+   Thermistors: Use the resistance change in semiconductors to measure temperature.
+	Infrared Sensors: Detect infrared radiation, often used for non-contact temperature
+	measurement.
+
+b. Mechanical Sensors
+	Strain Gauges: Measure deformation (strain) using the change in resistance.
+	Pressure Sensors: Measure pressure using changes in resistance, capacitance,
+	properties.
+	Force Sensors: Measure force through strain gauges or piezoelectric materials.
+	***Accelerometers: Measure acceleration using capacitive or piezoelectric methods.
+	***Gyroscopes: Measure angular velocity using MEMS, optical, or mechanical methods.
+c. Optical Sensors
+	Photodiodes: Detect light and convert it to an electrical signal.
+	Phototransistors: Similar to photodiodes but with amplification
+	Photovoltaic Cells: Convert light directly into electrical energy.
+	Fiber Optic Sensors: Use light traveling through fiber optics for s
+
+D.Magnetic Sensors
+	Hall Effect Sensors: Measure magnetic field strength using the Hall 	effect.(electric meter)
+	***Magnetometers: Measure the strength and direction of magnetic fields.(compass)
+	Reed Switches: Operate as an electrical switch in the presence of a magnetic field.
+e. Chemical Sensors
+	pH Sensors: Measure the acidity or alkalinity of a solution.
+	Gas Sensors: Detect gases like C02, 02, H2, etc., using chemical reactions.
+	Humidity Sensors: Measure moisture levels in the air.
+f. Acoustic Sensors
+	Microphones: Convert sound into an electrical signal.
+	Ultrasonic Sensors: Use ultrasonic waves to measure distance or detect objects.
+
+2.BASED ON SENSING METHOD
+
+a. Active Sensors
+	Radar: Uses electromagnetic waves to detect objects and measure their speed and 	distance
+	LIDAR: Uses laser light to measure distance by analyzing the reflected light.
+b. Passive Sensors
+	Thermocouples: Measure temperature without needing an external power source.
+	Photodiodes: Detect light without emitting any signal.
+
+3 BASED ON MATERIAL
+
+a. Semiconductor Sensors
+	Thermistors: Use semiconducting materials to measure temperature.
+	Hall Effect Sensors: Use semiconductors to measure magnetic fields.
+b. Metal Sensors
+	RTDs: Use metals like platinum to measure temperature.
+	Strain Gauges: Often use metal foil to measure strain.
+c. Ceramic Sensors
+	Piezoelectric Sensors: Use piezoelectric ceramics to measure pressure and force.
+
+CAPACITY BIOMATERIC SENSOR (facial)
+
+Heart of the camera is the sensor
+The different camera sensor types
+
+not megapixel see size of pixels
+iso shutter aperture
+
+iso -- artificial light added to photo to image (damage original image grains will occur) not 	suitable for low light
+shutter -- time sensor absorb light low shutter speed good for low light
+aperture -- hole of the lens high means full open good for low light 
+
+in ai face detection it reduce shutter then at a point glare(white ness) appear then again increase . when at lowest shutter cant see image we increase iso 
+
+OXYGEN SENSOR (LAMBDA SENSOR)
+
+amount of o2 absorbed released by car engine feed to ecu then it adjust carborator 
+
+HIBERNATION
+
+use EEG to stay mind awake in hibernation state
+EEG maps mind to find out neurons firing to do brain mapping
+    collect data and do ML learning training
+
+
+***IOT HARDWARE***
+
+MICROCONTROLLER
+A microcontroller is a compact
+integrated circuit designed to govern
+a specific operation in an embedded
+system. It typically includes a
+processor, memory, and
+input/output peripherals on a single
+chip. Here are some key points about
+
+A small computer packed Into a single Integrated Cricut()IC
+designed to control specific tasks within electronic systems.
+
+for small processing 
+micro processing for graphic and high end tasks
+
+microcontrollers:
+
+Key Components of a Microcontroller
+CPU (Central Processing unit): The brain of the microcontroller,
+	responsible for executing instructions.
+Memory: Stores data and program instructions, This includes both
+	RAM (for temporary data) and ROM/Flash (for permanent storage)
+Input/output (1/0) Peripherals: Allow the microcontroller to interact
+	with the outside world, receiving data and controlling devices
+
+A typical microcontroller includes a processor (CPU), memory, and input/output (1/0)
+peripherals on a single chip. They are often used in autocratically controlled products and
+devices, such as automobile engine control systems, implantable medical &vices, remote
+controls, office machines, appliances, power tools, toys, and other embedded systems.
+
+Components of a Microcontroller
+
+Central Processing Unit (CPU): This is the brain of the microcontroller, executing program 	instructions and controlling the operation of the device.
+Read-Only Memory (ROM): Used to store firmware— the program code that is executed by the 	CPU.
+Random Access Memory (RAM): Provides temporary storage for data and variables while the CPU 	is executing the program.
+Electrically Erasable Programmable Read-only Memory (EEPROM): Used for storing data that 	must be saved when the power is off. It's often used for settings or configuration 	data.
+Input/output (1/0) Ports: Interfaces that allow the microcontroller to interact with other 	devices and sensors. These can include digital 1/0 pins, analog-to-digital 	converters (ADCs), and converters (DACs).
+
+Timers and Counters: Used for measuring time intervals, generating precise time delays, or 	counting events.
+Communication Interfaces: These allow the microcontroller to communicate with other 	devices, often through protocols like UART, SPI, 12C, CAN, and USB.
+Clock Generator: Provides the clock signal that synchronizes the operation of the 	microcontroller. It can be an internal oscillator or an external crystal.
+
+to send binary code 1 and 1 we use a clock gap bwt two signals
+
+
+MICROCONTROLLER USED IN SPACE TECHNOLOGY
+The SAMV71Q21RT Arm Microcontroller is a radiation tolerant microcontroller (MCU) that can
+be used in New Space applications like low earth orbit (LEO) satellite constellations and robotics.
+It's designed for high reliability in aerospace, extreme temperatures, and enhanced radiation
+performance. It also offers a good combination of connectivity/ interfaces and high processing levels.

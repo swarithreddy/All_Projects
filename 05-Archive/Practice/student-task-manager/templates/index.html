@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p><a href="/logout">Logout</a></p>
+
+<form method="GET">
+    <input type="text" name="search" placeholder="Search task">
+    <select name="filter">
+        <option value="">All</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+    <button type="submit">Apply</button>
+</form>
+
+<form method="POST" class="task-form">
+    <input type="text" name="task" placeholder="Enter a task" required>
+    <input type="date" name="due_date">
+    <select name="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+    <button type="submit">Add Task</button>
+</form>
+
+
+<ul class="task-list">
+{% for task in tasks %}
+<li>
+    <div>
+        {% if task['completed'] %}
+            <s>{{ task['content'] }}</s>
+        {% else %}
+            {{ task['content'] }}
+        {% endif %}
+        <br>
+        <small>Due: {{ task['due_date'] }} | Priority: {{ task['priority'] }}</small>
+    </div>
+
+    <div>
+        <a href="/complete/{{ task['id'] }}">✔</a>
+        <a href="/edit/{{ task['id'] }}">✏</a>
+        <a href="/delete/{{ task['id'] }}">❌</a>
+    </div>
+</li>
+{% endfor %}
+</ul>
+

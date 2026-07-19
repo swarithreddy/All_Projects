@@ -1,0 +1,175 @@
+{
+  "name": "IEEE VJIT Student Branch Website",
+  "type": "FRAME",
+  "layoutMode": "VERTICAL",
+  "primaryAxisSizingMode": "AUTO",
+  "counterAxisSizingMode": "AUTO",
+  "itemSpacing": 80,
+  "paddingTop": 80,
+  "paddingBottom": 80,
+  "paddingLeft": 120,
+  "paddingRight": 120,
+  "backgroundColor": "#FFFFFF",
+  "children": [
+    {
+      "name": "Navbar",
+      "type": "FRAME",
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 40,
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "AUTO",
+      "children": [
+        { "name": "Logo", "type": "TEXT", "characters": "IEEE VJIT" },
+        {
+          "name": "Menu",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 32,
+          "children": [
+            { "name": "Home", "type": "TEXT", "characters": "Home" },
+            { "name": "About", "type": "TEXT", "characters": "About" },
+            { "name": "Chapters", "type": "TEXT", "characters": "Chapters" },
+            { "name": "Events", "type": "TEXT", "characters": "Events" },
+            { "name": "Gallery", "type": "TEXT", "characters": "Gallery" },
+            { "name": "Team", "type": "TEXT", "characters": "Team" },
+            { "name": "Contact", "type": "TEXT", "characters": "Contact" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 24,
+      "primaryAxisSizingMode": "AUTO",
+      "children": [
+        { "name": "Heading", "type": "TEXT", "characters": "IEEE Student Branch – VJIT" },
+        { "name": "Subheading", "type": "TEXT", "characters": "Innovating. Inspiring. Impacting the Future." },
+        { "name": "CTA Button", "type": "TEXT", "characters": "Explore Chapters" }
+      ]
+    },
+    {
+      "name": "About Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 16,
+      "children": [
+        { "name": "Title", "type": "TEXT", "characters": "About IEEE VJIT" },
+        {
+          "name": "Description",
+          "type": "TEXT",
+          "characters": "The IEEE Student Branch at Vidya Jyothi Institute of Technology (VJIT) promotes innovation and technical excellence through workshops, hackathons, and global collaborations."
+        }
+      ]
+    },
+    {
+      "name": "Chapters Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 32,
+      "children": [
+        { "name": "Section Title", "type": "TEXT", "characters": "Our Chapters" },
+        {
+          "name": "Tabs",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 40,
+          "children": [
+            { "name": "IEEE SSIT", "type": "TEXT", "characters": "IEEE SSIT" },
+            { "name": "IEEE CS", "type": "TEXT", "characters": "IEEE CS" }
+          ]
+        },
+        {
+          "name": "Content Area",
+          "type": "FRAME",
+          "layoutMode": "VERTICAL",
+          "itemSpacing": 16,
+          "children": [
+            { "name": "Chapter Info", "type": "TEXT", "characters": "Each chapter organizes events, workshops, and technical sessions for students and faculty under IEEE Hyderabad Section." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Events Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 32,
+      "children": [
+        { "name": "Section Title", "type": "TEXT", "characters": "Events & Announcements" },
+        {
+          "name": "Upcoming Events",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 24,
+          "children": [
+            { "name": "Event Card 1", "type": "TEXT", "characters": "Tech Symposium 2025" },
+            { "name": "Event Card 2", "type": "TEXT", "characters": "Hackathon: Code for Good" }
+          ]
+        },
+        { "name": "Past Events Button", "type": "TEXT", "characters": "View Past Events" }
+      ]
+    },
+    {
+      "name": "Gallery Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 32,
+      "children": [
+        { "name": "Section Title", "type": "TEXT", "characters": "Gallery" },
+        { "name": "Image Grid", "type": "RECTANGLE", "width": 800, "height": 400, "fills": [{ "type": "SOLID", "color": "#CCCCCC" }] }
+      ]
+    },
+    {
+      "name": "Team Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 24,
+      "children": [
+        { "name": "Section Title", "type": "TEXT", "characters": "Our Team" },
+        {
+          "name": "Team Grid",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 24,
+          "children": [
+            { "name": "Member 1", "type": "TEXT", "characters": "Chairperson – John Doe" },
+            { "name": "Member 2", "type": "TEXT", "characters": "Vice Chair – Jane Smith" },
+            { "name": "Member 3", "type": "TEXT", "characters": "Treasurer – Alex Kumar" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Contact Section",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 24,
+      "children": [
+        { "name": "Section Title", "type": "TEXT", "characters": "Contact Us" },
+        { "name": "Contact Info", "type": "TEXT", "characters": "Email: ieeevjit@vjit.ac.in | Hyderabad, Telangana" },
+        {
+          "name": "Social Links",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 24,
+          "children": [
+            { "name": "LinkedIn", "type": "TEXT", "characters": "LinkedIn" },
+            { "name": "Instagram", "type": "TEXT", "characters": "Instagram" },
+            { "name": "Facebook", "type": "TEXT", "characters": "Facebook" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Footer",
+      "type": "FRAME",
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 8,
+      "children": [
+        { "name": "Footer Text", "type": "TEXT", "characters": "© 2025 IEEE Student Branch, Vidya Jyothi Institute of Technology" }
+      ]
+    }
+  ]
+}

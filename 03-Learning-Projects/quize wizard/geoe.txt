@@ -1,0 +1,179 @@
+1
+What is the capital of Canada?
+    Toronto
+    Vancouver
+    Ottawa
+    Montreal
+3
+Explanation: Ottawa is the capital city of Canada, located in the province of Ontario.
+
+2
+Which country is known as the Land of the Rising Sun?
+    China
+    Japan
+    South Korea
+    Thailand
+2
+Explanation: Japan is called the Land of the Rising Sun because it is located to the east of the Asian continent, where the sun rises.
+
+3
+What is the largest country in the world by area?
+    Canada
+    China
+    United States
+    Russia
+4
+Explanation: Russia is the largest country in the world by area, covering over 17 million square kilometers.
+
+4
+Which continent is known as the Dark Continent?
+    Asia
+    Africa
+    Europe
+    South America
+2
+Explanation: Africa is often referred to as the Dark Continent due to its vast, unexplored interior during the 19th century.
+
+5
+What is the official language of Brazil?
+    Spanish
+    Portuguese
+    French
+    English
+2
+Explanation: Portuguese is the official language of Brazil, a legacy of its colonial history.
+
+6
+Which country is known for its neutrality and hosts many international organizations?
+    Sweden
+    Norway
+    Switzerland
+    Denmark
+3
+Explanation: Switzerland is known for its policy of neutrality and hosts many international organizations, including the Red Cross.
+
+7
+What is the capital of Australia?
+    Sydney
+    Melbourne
+    Canberra
+    Brisbane
+3
+Explanation: Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne.
+
+8
+Which country is the largest producer of coffee in the world?
+    Colombia
+    Vietnam
+    Brazil
+    Ethiopia
+3
+Explanation: Brazil is the largest producer of coffee in the world, accounting for about one-third of global production.
+
+9
+What is the smallest country in the world by area?
+    Monaco
+    Vatican City
+    San Marino
+    Liechtenstein
+2
+Explanation: Vatican City is the smallest country in the world by area, covering just 44 hectares.
+
+10
+Which ocean is the largest by surface area?
+    Atlantic Ocean
+    Indian Ocean
+    Arctic Ocean
+    Pacific Ocean
+4
+Explanation: The Pacific Ocean is the largest and deepest ocean on Earth, covering more than 63 million square miles.
+
+11
+What is the capital of Egypt?
+    Cairo
+    Alexandria
+    Giza
+    Luxor
+1
+Explanation: Cairo is the capital city of Egypt, known for its rich history and proximity to the pyramids of Giza.
+
+12
+Which country is known as the Land of a Thousand Lakes?
+    Norway
+    Sweden
+    Finland
+    Canada
+3
+Explanation: Finland is known as the Land of a Thousand Lakes due to its numerous lakes, estimated to be around 188,000.
+
+13
+What is the official language of Egypt?
+    Arabic
+    English
+    French
+    Spanish
+1
+Explanation: Arabic is the official language of Egypt, used in government, media, and education.
+
+14
+Which country is the largest exporter of oil?
+    United States
+    Saudi Arabia
+    Russia
+    Canada
+2
+Explanation: Saudi Arabia is the largest exporter of oil, with significant reserves and production capacity.
+
+15
+What is the capital of South Korea?
+    Seoul
+    Busan
+    Incheon
+    Daegu
+1
+Explanation: Seoul is the capital city of South Korea, known for its modern skyscrapers and historical sites.
+
+16
+Which country is known for its fjords?
+    Sweden
+    Norway
+    Finland
+    Denmark
+2
+Explanation: Norway is famous for its fjords, which are deep, glacially carved valleys filled with seawater.
+
+17
+What is the capital of India?
+    Mumbai
+    Kolkata
+    New Delhi
+    Bangalore
+3
+Explanation: New Delhi is the capital city of India, serving as the seat of all three branches of the government.
+
+18
+Which country is known as the Pearl of the Indian Ocean?
+    Maldives
+    Sri Lanka
+    Seychelles
+    Mauritius
+2
+Explanation: Sri Lanka is often referred to as the Pearl of the Indian Ocean due to its natural beauty and strategic location.
+
+19
+What is the capital of Italy?
+    Milan
+    Venice
+    Rome
+    Florence
+3
+Explanation: Rome is the capital city of Italy, known for its rich history and landmarks such as the Colosseum and Vatican City.
+
+20
+Which country is known as the Land of Fire and Ice?
+    Iceland
+    Greenland
+    Norway
+    Finland
+1
+Explanation: Iceland is known as the Land of Fire and Ice due to its volcanic activity and numerous glaciers.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Form</title>
+</head>
+<body>
+    <h1>Billing Form</h1>
+
+    {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+
+    <form method="post" action="{% url 'billing' %}">
+        {% csrf_token %}
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required><br>
+        <label for="date_p">Date of Purchase:</label>
+        <input type="text" id="date_p" name="date_p" placeholder="DD/MM/YY" required><br>
+        <label for="n_o_i">Number of Items Purchased:</label>
+        <input type="number" id="n_o_i" name="n_o_i" required><br>
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" id="phone_number" name="phone_number" required><br>
+
+        <div id="items">
+            <!-- JavaScript will populate this area with item input fields -->
+        </div>
+
+        <button type="submit">Add</button>
+    </form>
+
+    <script>
+        document.getElementById('n_o_i').addEventListener('change', function() {
+            let itemCount = this.value;
+            let itemsDiv = document.getElementById('items');
+            itemsDiv.innerHTML = ''; // Clear previous fields
+
+            for (let i = 1; i <= itemCount; i++) {
+                itemsDiv.innerHTML += `
+                    <h3>Item ${i}</h3>
+                    <label for="item_name_${i}">Item Name:</label>
+                    <input type="text" id="item_name_${i}" name="item_name_${i}" required><br>
+                    <label for="quantity_${i}">Quantity:</label>
+                    <input type="number" id="quantity_${i}" name="quantity_${i}" required><br>
+                    <label for="price_per_unit_${i}">Price per Unit:</label>
+                    <input type="number" id="price_per_unit_${i}" name="price_per_unit_${i}" step="0.01" required><br>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

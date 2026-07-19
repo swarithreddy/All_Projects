@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar-container">
+                <input type="text" id="searchBox" class="search-bar" placeholder="Search...">
+                <button onclick="toggleSearch()">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="main-section" data-aos="fade-up">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my projects and get to know me.</p>
+        </section>
+        <section id="about" class="main-section" data-aos="fade-up" data-aos-delay="100">
+            <h2>About Me</h2>
+            <p>A brief introduction about myself.</p>
+        </section>
+        <section id="projects" class="main-section" data-aos="fade-up" data-aos-delay="200">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </section>
+        <section id="contact" class="main-section" data-aos="fade-up" data-aos-delay="300">
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="instagram.png" alt="Instagram Logo">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleSearch() {
+            const searchBox = document.getElementById('searchBox');
+            if (searchBox.style.display === 'block') {
+                searchBox.style.display = 'none';
+            } else {
+                searchBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

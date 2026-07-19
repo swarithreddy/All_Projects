@@ -1,0 +1,179 @@
+1
+What is the primary purpose of an API?
+    To store data
+    To process data
+    To allow different software applications to communicate
+    To display data
+3
+Explanation: An API (Application Programming Interface) allows different software applications to communicate with each other.
+
+2
+Which of the following is a version control system?
+    Git
+    Docker
+    Kubernetes
+    Jenkins
+1
+Explanation: Git is a version control system used to track changes in source code during software development.
+
+3
+What does CSS stand for?
+    Cascading Style Sheets
+    Computer Style Sheets
+    Creative Style Sheets
+    Colorful Style Sheets
+1
+Explanation: CSS stands for Cascading Style Sheets, used for describing the presentation of web pages.
+
+4
+Which of the following is a NoSQL database?
+    MySQL
+    PostgreSQL
+    MongoDB
+    SQLite
+3
+Explanation: MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.
+
+5
+What is the main function of a load balancer?
+    To store data
+    To distribute network traffic
+    To process data
+    To display data
+2
+Explanation: A load balancer distributes network traffic across multiple servers to ensure reliability and performance.
+
+6
+Which programming language is known for its use in data analysis and machine learning?
+    Java
+    C++
+    Python
+    Ruby
+3
+Explanation: Python is widely used in data analysis and machine learning due to its simplicity and extensive libraries.
+
+7
+What does REST stand for in web services?
+    Representational State Transfer
+    Remote State Transfer
+    Representational Service Transfer
+    Remote Service Transfer
+1
+Explanation: REST stands for Representational State Transfer, an architectural style for designing networked applications.
+
+8
+Which of the following is a continuous integration tool?
+    Git
+    Docker
+    Jenkins
+    Kubernetes
+3
+Explanation: Jenkins is a continuous integration tool that automates the process of building and testing software.
+
+9
+What is the main purpose of a DNS server?
+    To store data
+    To process data
+    To translate domain names to IP addresses
+    To display data
+3
+Explanation: A DNS (Domain Name System) server translates domain names to IP addresses, allowing browsers to locate websites.
+
+10
+Which of the following is a front-end JavaScript framework?
+    Django
+    Flask
+    Angular
+    Spring
+3
+Explanation: Angular is a front-end JavaScript framework used for building dynamic web applications.
+
+11
+What does HTTP stand for?
+    Hyper Text Transfer Protocol
+    High Text Transfer Protocol
+    Hyper Tabular Transfer Protocol
+    None of these
+1
+Explanation: HTTP stands for Hyper Text Transfer Protocol, used for transmitting web pages over the internet.
+
+12
+Which of the following is a cloud computing platform?
+    GitHub
+    AWS
+    Jenkins
+    Docker
+2
+Explanation: AWS (Amazon Web Services) is a cloud computing platform that provides a wide range of cloud services.
+
+13
+What is the main function of a proxy server?
+    To store data
+    To process data
+    To act as an intermediary between a client and a server
+    To display data
+3
+Explanation: A proxy server acts as an intermediary between a client and a server, providing security and performance benefits.
+
+14
+Which of the following is a relational database management system?
+    MongoDB
+    Redis
+    MySQL
+    Cassandra
+3
+Explanation: MySQL is a relational database management system that uses structured query language (SQL) for managing data.
+
+15
+What does JSON stand for?
+    JavaScript Object Notation
+    JavaScript Online Notation
+    JavaScript Object Network
+    JavaScript Online Network
+1
+Explanation: JSON stands for JavaScript Object Notation, a lightweight data interchange format.
+
+16
+Which of the following is a back-end framework for web development?
+    React
+    Vue
+    Angular
+    Django
+4
+Explanation: Django is a back-end framework for web development, written in Python, known for its simplicity and robustness.
+
+17
+What is the main purpose of a cache?
+    To store frequently accessed data for quick retrieval
+    To process data
+    To display data
+    To transfer data
+1
+Explanation: A cache stores frequently accessed data for quick retrieval, improving the performance of applications.
+
+18
+Which of the following is a containerization platform?
+    Git
+    Docker
+    Jenkins
+    Kubernetes
+2
+Explanation: Docker is a containerization platform that allows developers to package applications and their dependencies into containers.
+
+19
+What does XML stand for?
+    Extensible Markup Language
+    Extra Markup Language
+    Extended Markup Language
+    Example Markup Language
+1
+Explanation: XML stands for Extensible Markup Language, used to encode documents in a format that is both human-readable and machine-readable.
+
+20
+Which of the following is a type of cyber attack?
+    Phishing
+    Debugging
+    Compiling
+    Refactoring
+1
+Explanation: Phishing is a type of cyber attack where attackers attempt to trick individuals into providing sensitive information by pretending to be a trustworthy entity.

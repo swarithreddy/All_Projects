@@ -1,0 +1,68 @@
+# Data files (generated - can be recreated by running the code)
+DWDM_Retail_Analytics/data/*.csv
+# But keep sample data for demonstration
+!DWDM_Retail_Analytics/data/sample_raw_sales_data.csv
+
+# Visualization files (generated - can be recreated by running the code)
+DWDM_Retail_Analytics/outputs/charts/*.png
+DWDM_Retail_Analytics/outputs/models/*.pkl
+DWDM_Retail_Analytics/outputs/rules/*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

@@ -1,0 +1,109 @@
+DOM
+
+import javax.xml.parsers.*;
+import org.w3c.dom.*;
+import java.io.*;
+import java.util.Scanner;
+
+public class DOMUserSearch {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter User ID: ");
+            String userId = sc.nextLine();
+
+            File file = new File("users.xml");
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(file);
+
+            NodeList list = doc.getElementsByTagName("user");
+            boolean found = false;
+
+            for (int i = 0; i < list.getLength(); i++) {
+                Element user = (Element) list.item(i);
+                String id = user.getElementsByTagName("id").item(0).getTextContent();
+
+                if (id.equals(userId)) {
+                    String name = user.getElementsByTagName("name").item(0).getTextContent();
+                    String email = user.getElementsByTagName("email").item(0).getTextContent();
+                    System.out.println("User Found ✅");
+                    System.out.println("ID: " + id);
+                    System.out.println("Name: " + name);
+                    System.out.println("Email: " + email);
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                System.out.println("User Not Found ❌");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+SAX
+
+import javax.xml.parsers.*;
+import org.xml.sax.*;
+import org.xml.sax.helpers.*;
+import java.io.*;
+import java.util.Scanner;
+
+public class SAXUserSearch {
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter User ID: ");
+            String userId = sc.nextLine();
+
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser parser = factory.newSAXParser();
+            parser.parse(new File("users.xml"), new UserHandler(userId));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+class UserHandler extends DefaultHandler {
+    private String searchId;
+    private String currentElement = "";
+    private String id, name, email;
+    private boolean found = false;
+
+    UserHandler(String searchId) {
+        this.searchId = searchId;
+    }
+
+    public void startElement(String uri, String localName, String qName, Attributes attributes) {
+        currentElement = qName;
+    }
+
+    public void characters(char[] ch, int start, int length) {
+        String value = new String(ch, start, length).trim();
+        if (value.length() == 0) return;
+
+        if (currentElement.equals("id")) id = value;
+        else if (currentElement.equals("name")) name = value;
+        else if (currentElement.equals("email")) email = value;
+    }
+
+    public void endElement(String uri, String localName, String qName) {
+        if (qName.equals("user") && id.equals(searchId)) {
+            System.out.println("User Found ✅");
+            System.out.println("ID: " + id);
+            System.out.println("Name: " + name);
+            System.out.println("Email: " + email);
+            found = true;
+        }
+        currentElement = "";
+    }
+
+    public void endDocument() {
+        if (!found) System.out.println("User Not Found ❌");
+    }
+}

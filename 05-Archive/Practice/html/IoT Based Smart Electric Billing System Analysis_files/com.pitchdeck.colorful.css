@@ -1,0 +1,101 @@
+:root {
+    /* theme1 colors */
+    --single-theme1-rgb: 82, 41, 217;
+
+    /* nutral colors for white Background */
+    --single-dark-high-rgb: 10, 18, 34;
+    --single-dark-medium-rgb: 102, 111, 130;
+    --single-dark-low-rgb: 166, 175, 193;
+
+    /* nutral colors for Dark Background */
+    --single-light-high-rgb: 250, 250, 250;
+    --single-light-medium-rgb: 150, 158, 175;
+    --single-light-low-rgb: 76, 85, 102;
+
+    /* theme1 Contrast colors */
+    --single-contrast-rgb: 224, 128, 82;
+
+    /*//////// *GRADIENT-COLOR* ///////*/
+    /* theme1 colors */
+    --gradient-theme1-rgb: 82, 41, 217;
+    --gradient-theme2-rgb: 35, 200, 250;
+
+    /* nutral colors for white Background */
+    --gradient-dark-high-rgb: 10, 18, 34;
+    --gradient-dark-medium-rgb: 102, 111, 130;
+    --gradient-dark-low-rgb: 166, 175, 193;
+
+    /* nutral colors for Dark Background */
+    --gradient-light-high-rgb: 250, 250, 250;
+    --gradient-light-medium-rgb: 150, 158, 175;
+    --gradient-light-low-rgb: 76, 85, 102;
+
+    /* theme1 Contrast colors */
+    --gradient-contrast-rgb: 224, 128, 82;
+
+    /*//////// *Dual-COLOR* ///////*/
+    /* theme1 colors */
+    --dual-theme1-rgb: 82, 41, 217;
+    --dual-theme2-rgb: 35, 200, 250;
+
+    /* nutral colors for white Background */
+    --dual-dark-high-rgb: 10, 18, 34;
+    --dual-dark-medium-rgb: 102, 111, 130;
+    --dual-dark-low-rgb: 166, 175, 193;
+
+    /* nutral colors for Dark Background */
+    --dual-light-high-rgb: 250, 250, 250;
+    --dual-light-medium-rgb: 150, 158, 175;
+    --dual-light-low-rgb: 76, 85, 102;
+    
+
+    /* dual contrast colors */
+    --dual-contrast-rgb: 255, 255, 255;
+
+
+    /*//////// *MULTI-COLOR* ///////*/
+    /* theme1 colors */
+    --multi-theme1-rgb: 82, 41, 217;
+    --multi-theme2-rgb: 45, 105, 247;
+    --multi-theme3-rgb: 35, 200, 250;
+    --multi-theme4-rgb: 163, 64, 152;
+    --multi-theme5-rgb: 250, 70, 103;
+    --multi-theme6-rgb: 250, 177, 50;
+    --multi-theme7-rgb: 64, 20, 208;
+    --multi-theme8-rgb: 21, 85, 236;
+    --multi-theme9-rgb: 8, 187, 241;
+    --multi-theme10-rgb: 155, 43, 143;
+    --multi-theme11-rgb: 237, 59, 92;
+    --multi-theme12-rgb: 243, 167, 33;
+
+    /* nutral colors for white Background */
+    --multi-dark-high-rgb: 10, 18, 34;
+    --multi-dark-medium-rgb: 102, 111, 130;
+    --multi-dark-low-rgb: 166, 175, 193;
+
+    /* nutral colors for Dark Background */
+    --multi-light-high-rgb: 250, 250, 250;
+    --multi-light-medium-rgb:150, 158, 175;
+    --multi-light-low-rgb: 76, 85, 102;
+
+    /* theme1 Contrast colors */
+    --multi-contrast-rgb: 224, 128, 82;
+
+    /* alter background colors */
+    --alter-light-rgb: 235, 240, 240;
+    --alter-dark-rgb: 6, 6, 6;
+
+    /*//////// *MONO-COLOR* ///////*/
+    /* nutral colors for white Background */
+    --mono-dark-high-rgb: 12, 12, 12;
+    --mono-dark-medium-rgb: 64, 64, 64;
+    --mono-dark-low-rgb: 127, 127, 127;
+
+    /* nutral colors for Dark Background */
+    --mono-light-high-rgb: 250, 250, 250;
+    --mono-light-medium-rgb: 194, 194, 194;
+    --mono-light-low-rgb: 155, 155, 155;
+
+    /* theme1 Contrast colors */
+    --mono-contrast-rgb: 82, 41, 217;
+}

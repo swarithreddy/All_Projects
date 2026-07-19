@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open 10 Tabs</title>
+</head>
+<body>
+    <button onclick="openTabs()">Open 10 Tabs</button>
+
+    <script>
+        function openTabs() {
+            for (let i = 0; i < 10; i++) {
+                window.open("https://www.example.com", "_blank");
+            }
+        }
+    </script>
+</body>
+</html>

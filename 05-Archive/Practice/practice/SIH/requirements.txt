@@ -1,0 +1,10 @@
+python
+flask
+sqlite3
+pywhatkit
+db browser
+
+
+
+pip install Flask
+    

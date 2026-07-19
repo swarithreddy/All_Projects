@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        background: #0f0f0f;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+    }
+
+    .login-container {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2);
+        text-align: center;
+        transform: translateY(-50px);
+        animation: fadeIn 1s ease forwards, bobbing 5s ease-in-out infinite;
+        z-index: 1;
+        position: relative;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes bobbing {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+    }
+
+    h1 {
+        margin: 0 0 20px;
+        font-size: 2.5em;
+        color: #0ff;
+        animation: fadeInText 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeInText {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 1em;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #0ff;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 5px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-color: #0ff;
+        outline: none;
+        box-shadow: 0 0 10px #0ff;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 20px 0;
+        color: #fff;
+        background: #0ff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+        background: #00cccc;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #0ff;
+    }
+
+    button:active {
+        transform: scale(1);
+    }
+
+    .animation-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .animation-container div {
+        position: absolute;
+        bottom: -150px;
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 255, 255, 0.3);
+        animation: rise 10s infinite ease-in;
+        border-radius: 50%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0ff;
+    }
+
+    .animation-container .bitcoin {
+        content: "\20BF";
+    }
+
+    .animation-container .pi {
+        content: "\03C0";
+    }
+
+    .animation-container .sigma {
+        content: "\03A3";
+    }
+
+    .animation-container div:nth-child(1) {
+        left: 20%;
+        animation-duration: 6s;
+    }
+    .animation-container div:nth-child(2) {
+        left: 40%;
+        animation-duration: 8s;
+    }
+    .animation-container div:nth-child(3) {
+        left: 60%;
+        animation-duration: 10s;
+    }
+    .animation-container div:nth-child(4) {
+        left: 80%;
+        animation-duration: 12s;
+    }
+
+    @keyframes rise {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh);
+            opacity: 0;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="#" method="post">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  <div class="animation-container">
+    <div class="bitcoin">&#x20BF;</div>
+    <div class="pi">&#x03C0;</div>
+    <div class="sigma">&#x03A3;</div>
+    <div class="bitcoin">&#x20BF;</div>
+  </div>
+</body>
+</html>

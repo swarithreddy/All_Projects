@@ -1,0 +1,232 @@
+
+/* DM Sans */
+.DMSans_DMSans .h1 {
+    font-family: "DM Sans";
+    font-size: 148px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h2 {
+    font-family: "DM Sans";
+    font-size: 120px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h3 {
+    font-family: "DM Sans";
+    font-size: 96px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h4 {
+    font-family: "DM Sans";
+    font-size: 72px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h5 {
+    font-family: "DM Sans";
+    font-size: 56px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h6 {
+    font-family: "DM Sans";
+    font-size: 44px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h7 {
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h8 {
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h9 {
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h10 {
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .h11 {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .p1 {
+    font-family: "DM Sans";
+    font-size: 44px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p2 {
+    font-family: "DM Sans";
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p3 {
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p4 {
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.48;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p5 {
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p6 {
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p7 {
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p8 {
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: -0.002em;
+}
+
+.DMSans_DMSans .p9 {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.68;
+    letter-spacing: -0.002em;
+}
+
+
+.DMSans_DMSans .n1 {
+    font-family: Archivo;
+    font-size: 54px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: 0em;
+}
+
+.DMSans_DMSans .hl1 {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.26;
+    letter-spacing: -0.04em;
+}
+
+.DMSans_DMSans .hl2 {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.62;
+    letter-spacing: -0.002em;
+}
+
+

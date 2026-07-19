@@ -1,0 +1,10 @@
+# ignore database files and outputs
+*.db
+*.sqlite
+
+# word/pdf report artifacts
+*.docx
+*.pdf
+
+# VS Code
+.vscode/

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Not Recognized</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Not Recognized</h1>
+        <p>Remaining attempts: {{ remaining }}</p>
+        <form action="/verify_face" method="POST">
+            <button type="submit">Try Again</button>
+        </form>
+    </div>
+</body>
+</html>

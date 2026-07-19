@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE student [
+    <!ELEMENT student (name, age, course)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT course (#PCDATA)>
+]>
+<student>
+    <name>Swarith Reddy</name>
+    <age>20</age>
+    <course>Computer Science</course>
+</student>

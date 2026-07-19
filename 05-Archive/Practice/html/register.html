@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Online Computer Science Course Registration Form</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a2a43, #192d4e);
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 800px;
+      background: #1c2a3f;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1s ease-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Header */
+    h2 {
+      text-align: center;
+      color: #00d4ff;
+      margin-bottom: 20px;
+      font-size: 26px;
+      position: relative;
+      font-weight: bold;
+    }
+
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      background: #00d4ff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+    }
+
+    /* Labels and Inputs */
+    label {
+      font-weight: bold;
+      display: block;
+      color: #a8d0f3;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #293b55;
+      color: #e0e0e0;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+      background: #334968;
+      outline: none;
+      box-shadow: 0 0 10px #00d4ff;
+    }
+
+    /* Section Headings */
+    .section {
+      border-left: 4px solid #00d4ff;
+      padding-left: 15px;
+      margin-top: 20px;
+    }
+
+    /* File Upload */
+    input[type="file"] {
+      background: #293b55;
+      padding: 5px;
+      border-radius: 5px;
+      color: #a8d0f3;
+      margin-top: 5px;
+    }
+
+    /* Buttons */
+    .send-otp, .verify-email, .submit-button {
+      background: #00d4ff;
+      color: #1c2a3f;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .send-otp:hover, .verify-email:hover, .submit-button:hover {
+      background: #1c88bf;
+      color: #ffffff;
+    }
+
+    /* Submit Button */
+    .submit-button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+      animation: bounce 2s infinite;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* Progress Indicator */
+    .progress-bar {
+      height: 8px;
+      width: 0;
+      background: #00d4ff;
+      transition: width 0.4s ease;
+      margin-top: -10px;
+    }
+
+    /* Tooltip */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: #00d4ff;
+      color: #333;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 110%;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="progress-bar" id="progressBar"></div>
+  <h2>Online Computer Science Course Registration</h2>
+
+  <!-- Personal Information Section -->
+  <div class="section">
+    <h3>Personal Information</h3>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" required>
+
+    <label for="middle-name">Middle Name:</label>
+    <input type="text" id="middle-name">
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" required>
+
+    <label for="profile-picture">Profile Picture (Optional):</label>
+    <input type="file" id="profile-picture" accept="image/*">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required>
+    <button class="send-otp">Send OTP</button>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" required>
+    <button class="verify-email">Verify Email</button>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+  </div>
+
+  <!-- Academic Information Section -->
+  <div class="section">
+    <h3>Academic Information</h3>
+    <label for="college">College/University:</label>
+    <input type="text" id="college" required>
+    <input type="file" id="college-id" accept="image/*">
+
+    <label for="study-year">Current Year of Study:</label>
+    <select id="study-year" required>
+      <option>High School</option>
+      <option>1st Year</option>
+      <option>2nd Year</option>
+      <option>3rd Year</option>
+      <option>4th Year</option>
+      <option>Graduate</option>
+    </select>
+  </div>
+
+  <!-- Course and Skills Information Section -->
+  <div class="section">
+    <h3>Course and Skills Information</h3>
+    <label for="specialization">Intended Course Specialization:</label>
+    <select id="specialization">
+      <option>AI</option>
+      <option>Data Science</option>
+      <option>Cybersecurity</option>
+    </select>
+
+    <label>Prior Programming Experience:</label>
+    <input type="radio" name="experience" value="Yes"> Yes
+    <input type="radio" name="experience" value="No"> No
+  </div>
+
+  <!-- Additional Information Section -->
+  <div class="section">
+    <h3>Additional Information</h3>
+    <label for="reason">Reason for Taking the Course:</label>
+    <textarea id="reason" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="submit-button">Submit</button>
+</div>
+
+<script>
+  // Progress Bar Update
+  document.querySelectorAll('input, select, textarea').forEach(input => {
+    input.addEventListener('input', updateProgressBar);
+  });
+
+  function updateProgressBar() {
+    const filledInputs = [...document.querySelectorAll('input, select, textarea')].filter(input => input.value);
+    const progress = (filledInputs.length / 16) * 100;
+    document.getElementById('progressBar').style.width = `${progress}%`;
+  }
+</script>
+
+</body>
+</html>

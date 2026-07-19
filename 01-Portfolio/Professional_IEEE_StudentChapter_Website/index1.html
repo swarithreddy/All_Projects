@@ -1,0 +1,2917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE VJIT Student Branch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --ieee-blue: #00629B;
+            --ieee-light-blue: #00AEEF;
+            --white: #FFFFFF;
+            --light-gray: #F5F7FA;
+            --dark-text: #1A1A1A;
+            --body-text: #333333;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--body-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: box-shadow 0.3s;
+        }
+        
+        .navbar.scrolled {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--ieee-blue);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .logo-title {
+            color: var(--ieee-blue);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--body-text);
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--body-text);
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .nav-link:hover {
+            color: var(--ieee-blue);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            width: 30px;
+            height: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hamburger {
+            width: 24px;
+            height: 2px;
+            background: var(--ieee-blue);
+            position: relative;
+            transition: 0.3s;
+        }
+        
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: var(--ieee-blue);
+            transition: 0.3s;
+        }
+        
+        .hamburger::before {
+            transform: translateY(-8px);
+        }
+        
+        .hamburger::after {
+            transform: translateY(8px);
+        }
+        
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            padding: 1rem 2rem;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .mobile-link {
+            padding: 0.75rem 1rem;
+            color: var(--body-text);
+            transition: all 0.3s;
+        }
+        
+        .mobile-link:hover {
+            background: var(--light-gray);
+            color: var(--ieee-blue);
+        }
+        
+        .mobile-menu.active {
+            display: flex;
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background: var(--ieee-blue);
+            color: white;
+            padding: 0.625rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #004f7f;
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--ieee-blue);
+            color: var(--ieee-blue);
+            padding: 0.625rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background: var(--ieee-blue);
+            color: white;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: var(--ieee-blue);
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-hero-primary:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .btn-hero-outline {
+            border: 2px solid white;
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-hero-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 64px;
+            background: linear-gradient(135deg, var(--ieee-blue) 0%, var(--ieee-light-blue) 50%, var(--white) 100%);
+        }
+        
+        .hero-content {
+            text-align: center;
+            padding: 5rem 0;
+        }
+        
+        .hero-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-logo-circle {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ieee-blue);
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-logo-separator {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .hero-title {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stat-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--ieee-blue);
+            margin: 0 auto 1rem;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--ieee-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--body-text);
+            font-size: 1rem;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            color: var(--ieee-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .section-divider {
+            width: 96px;
+            height: 4px;
+            background: var(--ieee-light-blue);
+            margin: 0 auto 1rem;
+        }
+        
+        .section-description {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--body-text);
+        }
+        
+        .subsection-title {
+            color: var(--dark-text);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* About Section */
+        .about-section {
+            background: white;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-quote {
+            border-left: 4px solid var(--ieee-blue);
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: var(--body-text);
+            margin-top: 2rem;
+        }
+        
+        .quote-author {
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 600;
+        }
+        
+        .about-image {
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .mission-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-top: 4px solid var(--ieee-blue);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mission-icon {
+            width: 40px;
+            height: 40px;
+            color: var(--ieee-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .mission-card h3 {
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+        
+        .mission-card p {
+            margin-bottom: 0;
+        }
+        
+        /* Chapters Section */
+        .chapters-section {
+            background: var(--light-gray);
+        }
+        
+        .tabs {
+            max-width: 100%;
+        }
+        
+        .tabs-list {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab-trigger {
+            flex: 1;
+            padding: 0.875rem 2rem;
+            background: white;
+            color: var(--body-text);
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .tab-trigger.active {
+            background: var(--ieee-blue);
+            color: white;
+        }
+        
+        .tab-trigger:hover:not(.active) {
+            background: var(--light-gray);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .chapter-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .chapter-header {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+        
+        .chapter-logo {
+            width: 96px;
+            height: 96px;
+            background: var(--ieee-blue);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .chapter-info {
+            flex: 1;
+        }
+        
+        .chapter-info h3 {
+            color: var(--ieee-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .chapter-info p {
+            margin-bottom: 1rem;
+        }
+        
+        .chapter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            padding: 0.375rem 0.75rem;
+            background: rgba(0, 174, 239, 0.1);
+            color: var(--ieee-blue);
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+        
+        .chapter-events {
+            margin-bottom: 2rem;
+        }
+        
+        .chapter-events h4 {
+            color: var(--dark-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .event-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .event-card img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+        
+        .event-content {
+            padding: 1.5rem;
+        }
+        
+        .event-content h5 {
+            color: var(--dark-text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .event-content p {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        
+        .event-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--ieee-blue);
+            font-size: 0.875rem;
+        }
+        
+        .event-date svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .chapter-button {
+            text-align: center;
+        }
+        
+        .chapter-leadership {
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .chapter-leadership h4 {
+            color: var(--dark-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .leader-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .leader-avatar {
+            width: 64px;
+            height: 64px;
+            background: var(--ieee-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .leader-role {
+            color: var(--dark-text);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .leader-name {
+            color: var(--body-text);
+            font-size: 0.875rem;
+        }
+        
+        /* Announcements Section */
+        .announcements-section {
+            padding: 4rem 0;
+            background: linear-gradient(90deg, var(--ieee-blue) 0%, var(--ieee-light-blue) 100%);
+        }
+        
+        .announcements-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .announcements-header h2 {
+            color: white;
+        }
+        
+        .megaphone-icon {
+            width: 32px;
+            height: 32px;
+            color: white;
+        }
+        
+        .announcements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .announcement-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+        
+        .announcement-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .announcement-header {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .announcement-badges {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            border: 1px solid;
+        }
+        
+        .badge-high {
+            border-color: #ef4444;
+            color: #ef4444;
+        }
+        
+        .badge-medium {
+            border-color: var(--ieee-blue);
+            color: var(--ieee-blue);
+        }
+        
+        .announcement-date {
+            font-size: 0.75rem;
+            color: var(--body-text);
+        }
+        
+        .announcement-header h4 {
+            color: var(--dark-text);
+            margin-bottom: 0;
+        }
+        
+        .expand-btn {
+            color: var(--ieee-blue);
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        
+        .expand-btn svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .announcement-card.expanded .expand-btn svg {
+            transform: rotate(180deg);
+        }
+        
+        .announcement-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            padding: 0 1.5rem;
+        }
+        
+        .announcement-card.expanded .announcement-content {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .announcement-content p {
+            margin-bottom: 0;
+        }
+        
+        /* Events Section */
+        .events-section {
+            background: white;
+        }
+        
+        .upcoming-events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .upcoming-event-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .upcoming-event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .upcoming-event-card img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+        
+        .event-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.375rem 0.875rem;
+            background: var(--ieee-blue);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .upcoming-event-content {
+            padding: 2rem;
+        }
+        
+        .upcoming-event-content h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .upcoming-event-content p {
+            color: var(--body-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .event-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .event-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--body-text);
+            font-size: 0.875rem;
+        }
+        
+        .event-detail svg {
+            width: 16px;
+            height: 16px;
+            color: var(--ieee-blue);
+            flex-shrink: 0;
+        }
+        
+        .upcoming-event-content .btn-primary {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .events-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.625rem 1.5rem;
+            border: 2px solid var(--ieee-blue);
+            color: var(--ieee-blue);
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--ieee-blue);
+            color: white;
+        }
+        
+        .past-events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .past-event-card {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .past-event-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .past-event-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .past-event-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .past-event-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .past-event-card:hover .past-event-overlay {
+            opacity: 1;
+        }
+        
+        .past-event-title {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .past-event-overlay .badge {
+            border-color: white;
+            color: white;
+        }
+        
+        /* Team Section */
+        .team-section {
+            background: var(--light-gray);
+        }
+        
+        .faculty-container {
+            max-width: 350px;
+            margin: 0 auto 3rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .team-grid-small {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faculty-card {
+            border-top: 4px solid var(--ieee-blue);
+        }
+        
+        .team-avatar {
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(135deg, var(--ieee-blue), var(--ieee-light-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 auto 1rem;
+        }
+        
+        .faculty-card .team-avatar {
+            width: 128px;
+            height: 128px;
+            font-size: 2rem;
+        }
+        
+        .team-card h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-role {
+            color: var(--ieee-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .team-card:hover .team-social {
+            opacity: 1;
+        }
+        
+        .team-social .social-link {
+            width: 32px;
+            height: 32px;
+            background: rgba(0, 98, 155, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ieee-blue);
+            transition: all 0.3s;
+        }
+        
+        .team-social .social-link:hover {
+            background: var(--ieee-blue);
+            color: white;
+        }
+        
+        .team-social .social-link svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .chapter-teams {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            background: white;
+        }
+        
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay p {
+            color: white;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s;
+        }
+        
+        .lightbox-close:hover {
+            color: var(--ieee-light-blue);
+        }
+        
+        .lightbox-close svg {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .lightbox-content {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        #lightboxCaption {
+            color: white;
+            text-align: center;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: var(--light-gray);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+        
+        .contact-form-container {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-form-container h3 {
+            color: var(--dark-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            color: var(--body-text);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--ieee-blue);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-card:first-child,
+        .contact-card:nth-child(2) {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(0, 98, 155, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--ieee-blue);
+        }
+        
+        .contact-card h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .contact-card p {
+            color: var(--body-text);
+            margin: 0;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 48px;
+            height: 48px;
+            background: rgba(0, 98, 155, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--ieee-blue);
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background: var(--ieee-blue);
+            color: white;
+        }
+        
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .map-placeholder {
+            aspect-ratio: 16/9;
+            background: var(--light-gray);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .map-placeholder span {
+            font-size: 0.875rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-about {
+            grid-column: span 2;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo .logo-icon {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .footer-logo .logo-title {
+            color: white;
+        }
+        
+        .footer-logo .logo-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        
+        .footer-social a:hover {
+            background: var(--ieee-blue);
+        }
+        
+        .footer-social svg {
+            width: 20px;
+            height: 20px;
+            color: white;
+        }
+        
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--ieee-light-blue);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            background: var(--ieee-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            background: #004f7f;
+            transform: translateY(-3px);
+        }
+        
+        .scroll-to-top svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .chapter-teams {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        
+            h2 {
+                font-size: 1.875rem;
+            }
+        
+            h3 {
+                font-size: 1.5rem;
+            }
+        
+            .nav-links {
+                display: none;
+            }
+        
+            .mobile-menu-btn {
+                display: flex;
+            }
+        
+            .hero-logos {
+                gap: 1rem;
+            }
+        
+            .hero-logo-circle {
+                width: 60px;
+                height: 60px;
+            }
+        
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+        
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .chapter-header {
+                flex-direction: column;
+            }
+        
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .upcoming-events-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .footer-about {
+                grid-column: span 1;
+            }
+        
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+        
+            section {
+                padding: 3rem 0;
+            }
+        
+            .hero-title {
+                font-size: 1.75rem;
+            }
+        
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+        
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .tabs-list {
+                max-width: 100%;
+            }
+        
+            .tab-trigger {
+                padding: 0.75rem 1rem;
+                font-size: 0.875rem;
+            }
+        
+            .team-grid,
+            .team-grid-small {
+                grid-template-columns: 1fr;
+            }
+        
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .mobile-menu.active {
+            animation: slideDown 0.3s;
+        }
+        
+        /* Hide items by filter */
+        .past-event-card.hidden,
+        .gallery-item.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">IEEE</div>
+                <div class="logo-text">
+                    <div class="logo-title">IEEE VJIT</div>
+                    <div class="logo-subtitle">Student Branch</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#chapters" class="nav-link">Chapters</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-primary">JOIN IEEE</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#chapters" class="mobile-link">Chapters</a>
+            <a href="#events" class="mobile-link">Events</a>
+            <a href="#team" class="mobile-link">Team</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-primary">JOIN IEEE</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logos">
+                    <div class="hero-logo-circle">IEEE</div>
+                    <div class="hero-logo-separator">×</div>
+                    <div class="hero-logo-circle">VJIT</div>
+                </div>
+                <h1 class="hero-title">IEEE VJIT Student Branch</h1>
+                <p class="hero-subtitle">Advancing Technology for Humanity</p>
+                <div class="hero-buttons">
+                    <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn-hero-primary">Join IEEE</a>
+                    <a href="#chapters" class="btn-hero-outline">Explore Chapters</a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Events Conducted</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About IEEE VJIT</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>The IEEE Student Branch at Vidya Jyothi Institute of Technology is dedicated to advancing technology for humanity. We are part of the world's largest technical professional organization, providing our members with access to cutting-edge resources, networking opportunities, and technical expertise.</p>
+                    <p>Our branch actively promotes innovation through our specialized chapters - IEEE SSIT (Society on Social Implications of Technology) and IEEE CS (Computer Society), each focusing on unique aspects of technology and its impact on society.</p>
+                    <blockquote class="about-quote">
+                        "IEEE VJIT is committed to nurturing the next generation of technology leaders who will shape the future with innovation and ethical responsibility."
+                        <div class="quote-author">— Faculty Coordinator, IEEE VJIT</div>
+                    </blockquote>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1755053757912-a63da9d6e0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwdGVhbXdvcmt8ZW58MXx8fHwxNzYyMTYxNzM3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="IEEE VJIT Team">
+                </div>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <svg class="mission-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                    <h3>Mission</h3>
+                    <p>To foster technological innovation and excellence among students, providing a platform for learning, collaboration, and professional development in alignment with IEEE standards.</p>
+                </div>
+                <div class="mission-card">
+                    <svg class="mission-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <h3>Vision</h3>
+                    <p>To be the leading student organization that empowers future engineers and technologists to create impactful solutions for global challenges.</p>
+                </div>
+                <div class="mission-card">
+                    <svg class="mission-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <h3>Objectives</h3>
+                    <p>Organize technical workshops, seminars, and competitions. Promote research and innovation. Build industry connections. Develop leadership and professional skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters Section -->
+    <section id="chapters" class="chapters-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Chapters</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Explore our specialized IEEE chapters, each dedicated to advancing specific domains of technology</p>
+            </div>
+            <div class="tabs">
+                <div class="tabs-list">
+                    <button class="tab-trigger active" data-tab="ssit">IEEE SSIT</button>
+                    <button class="tab-trigger" data-tab="cs">IEEE CS</button>
+                </div>
+                <div class="tab-content active" id="tab-ssit">
+                    <div class="chapter-card">
+                        <div class="chapter-header">
+                            <div class="chapter-logo">SSIT</div>
+                            <div class="chapter-info">
+                                <h3>IEEE Society on Social Implications of Technology</h3>
+                                <p>IEEE SSIT focuses on the social and ethical implications of technology, addressing how technological advancements impact society, culture, and individuals. We explore critical topics like AI ethics, digital privacy, sustainable technology, and technological accessibility.</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">Tech Ethics</span>
+                                    <span class="tag">Social Impact</span>
+                                    <span class="tag">Sustainability</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapter-events">
+                            <h4>Recent Events</h4>
+                            <div class="events-grid">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1596496356933-9b6e0b186b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Tech Ethics Workshop">
+                                    <div class="event-content">
+                                        <h5>Tech Ethics Workshop</h5>
+                                        <p>Exploring ethical implications of AI and emerging technologies</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Dec 15, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Sustainable Tech Summit">
+                                    <div class="event-content">
+                                        <h5>Sustainable Tech Summit</h5>
+                                        <p>Discussing technology's role in environmental sustainability</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Jan 10, 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Digital Inclusion Talk">
+                                    <div class="event-content">
+                                        <h5>Digital Inclusion Talk</h5>
+                                        <p>Bridging the digital divide through technology</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Feb 5, 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chapter-button">
+                                <a href="#events" class="btn-outline">View All Events</a>
+                            </div>
+                        </div>
+                        <div class="chapter-leadership">
+                            <h4>Chapter Leadership</h4>
+                            <div class="leadership-grid">
+                                <div class="leader-card">
+                                    <div class="leader-avatar">FA</div>
+                                    <div class="leader-info">
+                                        <div class="leader-role">Faculty Advisor</div>
+                                        <div class="leader-name">Dr. [Name]</div>
+                                    </div>
+                                </div>
+                                <div class="leader-card">
+                                    <div class="leader-avatar">CC</div>
+                                    <div class="leader-info">
+                                        <div class="leader-role">Chapter Chair</div>
+                                        <div class="leader-name">[Student Name]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab-cs">
+                    <div class="chapter-card">
+                        <div class="chapter-header">
+                            <div class="chapter-logo">CS</div>
+                            <div class="chapter-info">
+                                <h3>IEEE Computer Society</h3>
+                                <p>The IEEE Computer Society chapter is dedicated to advancing the theory, practice, and application of computer and information processing science and technology. We organize workshops, hackathons, and seminars on cutting-edge topics in computer science and engineering.</p>
+                                <div class="chapter-tags">
+                                    <span class="tag">Software Development</span>
+                                    <span class="tag">AI & ML</span>
+                                    <span class="tag">Cybersecurity</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapter-events">
+                            <h4>Recent Events</h4>
+                            <div class="events-grid">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="CodeFest 2024">
+                                    <div class="event-content">
+                                        <h5>CodeFest 2024</h5>
+                                        <p>24-hour coding marathon with exciting challenges</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Nov 20, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1596496356933-9b6e0b186b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Machine Learning Bootcamp">
+                                    <div class="event-content">
+                                        <h5>Machine Learning Bootcamp</h5>
+                                        <p>Hands-on training in ML algorithms and applications</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Dec 8, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Web Development Workshop">
+                                    <div class="event-content">
+                                        <h5>Web Development Workshop</h5>
+                                        <p>Modern web technologies: React, Node.js, and beyond</p>
+                                        <div class="event-date">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span>Jan 18, 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chapter-button">
+                                <a href="#events" class="btn-outline">View All Events</a>
+                            </div>
+                        </div>
+                        <div class="chapter-leadership">
+                            <h4>Chapter Leadership</h4>
+                            <div class="leadership-grid">
+                                <div class="leader-card">
+                                    <div class="leader-avatar">FA</div>
+                                    <div class="leader-info">
+                                        <div class="leader-role">Faculty Advisor</div>
+                                        <div class="leader-name">Dr. [Name]</div>
+                                    </div>
+                                </div>
+                                <div class="leader-card">
+                                    <div class="leader-avatar">CC</div>
+                                    <div class="leader-info">
+                                        <div class="leader-role">Chapter Chair</div>
+                                        <div class="leader-name">[Student Name]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="announcements-section">
+        <div class="container">
+            <div class="announcements-header">
+                <svg class="megaphone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 11l18-5v12L3 13v-2z"></path>
+                    <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+                </svg>
+                <h2>Announcements</h2>
+            </div>
+            <div class="announcements-grid">
+                <div class="announcement-card">
+                    <div class="announcement-header">
+                        <div>
+                            <div class="announcement-badges">
+                                <span class="badge badge-high">Registration</span>
+                                <span class="announcement-date">November 3, 2024</span>
+                            </div>
+                            <h4>IEEE Xtreme 18.0 Registrations Open!</h4>
+                        </div>
+                        <button class="expand-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="announcement-content">
+                        <p>The world's largest 24-hour programming competition is here. Register now to test your coding skills against teams worldwide. Limited spots available!</p>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-header">
+                        <div>
+                            <div class="announcement-badges">
+                                <span class="badge badge-medium">Event</span>
+                                <span class="announcement-date">November 10, 2024</span>
+                            </div>
+                            <h4>Guest Lecture on Quantum Computing</h4>
+                        </div>
+                        <button class="expand-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="announcement-content">
+                        <p>Dr. Rajesh Kumar from IIT Bombay will deliver an insightful lecture on quantum computing fundamentals and future applications. Open to all students.</p>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-header">
+                        <div>
+                            <div class="announcement-badges">
+                                <span class="badge badge-high">Membership</span>
+                                <span class="announcement-date">Ongoing</span>
+                            </div>
+                            <h4>IEEE Membership Drive 2024-25</h4>
+                        </div>
+                        <button class="expand-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="announcement-content">
+                        <p>Join IEEE and get access to exclusive resources, conferences, and networking opportunities. Special student rates available. Visit our booth this week!</p>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-header">
+                        <div>
+                            <div class="announcement-badges">
+                                <span class="badge badge-medium">Competition</span>
+                                <span class="announcement-date">Deadline: Nov 20, 2024</span>
+                            </div>
+                            <h4>Project Exhibition - Call for Entries</h4>
+                        </div>
+                        <button class="expand-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="announcement-content">
+                        <p>Showcase your innovative projects at our annual tech exhibition. Submit your entries by November 20th. Cash prizes and internship opportunities for winners!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Events</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Join us for exciting workshops, seminars, and competitions throughout the year</p>
+            </div>
+            
+            <h3 class="subsection-title">Upcoming Events</h3>
+            <div class="upcoming-events-grid">
+                <div class="upcoming-event-card">
+                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Event">
+                    <div class="event-badge">SSIT</div>
+                    <div class="upcoming-event-content">
+                        <h4>AI Ethics Panel Discussion</h4>
+                        <p>Expert panel discussing ethical considerations in artificial intelligence development</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>November 15, 2024</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>2:00 PM - 4:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Main Auditorium, VJIT</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+                <div class="upcoming-event-card">
+                    <img src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Event">
+                    <div class="event-badge">CS</div>
+                    <div class="upcoming-event-content">
+                        <h4>IEEE Xtreme 18.0 Programming Competition</h4>
+                        <p>24-hour global coding competition testing problem-solving skills</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>November 25, 2024</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>12:00 AM (24 hours)</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Online & VJIT Lab</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="ssit">IEEE SSIT</button>
+                <button class="filter-btn" data-filter="cs">IEEE CS</button>
+            </div>
+
+            <h3 class="subsection-title">Past Events</h3>
+            <div class="past-events-grid">
+                <div class="past-event-card" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Blockchain Technology Seminar">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Blockchain Technology Seminar</div>
+                            <span class="badge">CS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-event-card" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Digital Privacy Workshop">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Digital Privacy Workshop</div>
+                            <span class="badge">SSIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-event-card" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1596496356933-9b6e0b186b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Machine Learning Fundamentals">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Machine Learning Fundamentals</div>
+                            <span class="badge">CS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-event-card" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Tech for Social Good Hackathon">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Tech for Social Good Hackathon</div>
+                            <span class="badge">SSIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-event-card" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1755053757912-a63da9d6e0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Cybersecurity Awareness Session">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Cybersecurity Awareness Session</div>
+                            <span class="badge">CS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="past-event-card" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Accessible Technology Design">
+                    <div class="past-event-overlay">
+                        <div>
+                            <div class="past-event-title">Accessible Technology Design</div>
+                            <span class="badge">SSIT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Meet the dedicated team leading IEEE VJIT Student Branch</p>
+            </div>
+
+            <h3 class="subsection-title">Faculty Leadership</h3>
+            <div class="faculty-container">
+                <div class="team-card faculty-card">
+                    <div class="team-avatar">FC</div>
+                    <h4>Dr. Faculty Name</h4>
+                    <p class="team-role">Faculty Coordinator</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Student Branch Core Team</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">BC</div>
+                    <h4>Student Name</h4>
+                    <p class="team-role">Branch Chair</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">VC</div>
+                    <h4>Student Name</h4>
+                    <p class="team-role">Vice Chair</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">SE</div>
+                    <h4>Student Name</h4>
+                    <p class="team-role">Secretary</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">TR</div>
+                    <h4>Student Name</h4>
+                    <p class="team-role">Treasurer</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-teams">
+                <div class="chapter-team">
+                    <h3 class="subsection-title">IEEE SSIT Chapter</h3>
+                    <div class="team-grid-small">
+                        <div class="team-card">
+                            <div class="team-avatar">SC</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">SSIT Chair</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">SV</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">SSIT Vice Chair</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">SS</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">SSIT Secretary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chapter-team">
+                    <h3 class="subsection-title">IEEE CS Chapter</h3>
+                    <div class="team-grid-small">
+                        <div class="team-card">
+                            <div class="team-avatar">CC</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">CS Chair</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">CV</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">CS Vice Chair</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">CS</div>
+                            <h4>Student Name</h4>
+                            <p class="team-role">CS Secretary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Highlights from our events and activities</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ssit">SSIT Events</button>
+                <button class="filter-btn" data-filter="cs">CS Events</button>
+                <button class="filter-btn" data-filter="joint">Joint Events</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1596496356933-9b6e0b186b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Web Development Workshop">
+                    <div class="gallery-overlay">
+                        <p>Web Development Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1755053757912-a63da9d6e0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Tech Ethics Panel">
+                    <div class="gallery-overlay">
+                        <p>Tech Ethics Panel</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="joint">
+                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Annual Tech Conference">
+                    <div class="gallery-overlay">
+                        <p>Annual Tech Conference</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Hackathon 2024">
+                    <div class="gallery-overlay">
+                        <p>Hackathon 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Sustainable Tech Summit">
+                    <div class="gallery-overlay">
+                        <p>Sustainable Tech Summit</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1596496356933-9b6e0b186b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="ML Bootcamp">
+                    <div class="gallery-overlay">
+                        <p>ML Bootcamp</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="joint">
+                    <img src="https://images.unsplash.com/photo-1755053757912-a63da9d6e0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Team Building Event">
+                    <div class="gallery-overlay">
+                        <p>Team Building Event</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ssit">
+                    <img src="https://images.unsplash.com/photo-1582192904915-d89c7250b235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Privacy Workshop">
+                    <div class="gallery-overlay">
+                        <p>Privacy Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cs">
+                    <img src="https://images.unsplash.com/photo-1638202677704-b74690bb8fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Code Sprint">
+                    <div class="gallery-overlay">
+                        <p>Code Sprint</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Have questions or want to get involved? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3>Send us a message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Your message..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Vidya Jyothi Institute of Technology<br>Aziznagar Gate, C.B. Post, Hyderabad<br>Telangana - 500075, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ieee@vjit.ac.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+                                </svg>
+                            </a>
+                            <a href="mailto:ieee@vjit.ac.in" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h4>Location</h4>
+                        <div class="map-placeholder">
+                            <p>Google Maps Integration<br><span>(Embed: VJIT Campus Location)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">IEEE</div>
+                        <div class="logo-text">
+                            <div class="logo-title">IEEE VJIT</div>
+                            <div class="logo-subtitle">Student Branch</div>
+                        </div>
+                    </div>
+                    <p>Advancing Technology for Humanity. The IEEE Student Branch at VJIT is dedicated to fostering innovation, collaboration, and professional development among students.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+                            </svg>
+                        </a>
+                        <a href="mailto:ieee@vjit.ac.in" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#chapters">Chapters</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://www.ieee.org/membership/join/index.html" target="_blank">Join IEEE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 IEEE VJIT Student Branch | Hyderabad Section</p>
+                <p>Designed by IEEE Web Development Team, VJIT</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <p id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Tabs functionality
+        const tabTriggers = document.querySelectorAll('.tab-trigger');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const targetTab = trigger.getAttribute('data-tab');
+                
+                // Remove active class from all triggers and contents
+                tabTriggers.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked trigger and corresponding content
+                trigger.classList.add('active');
+                document.getElementById(`tab-${targetTab}`).classList.add('active');
+            });
+        });
+        
+        // Announcements expand/collapse
+        const announcementCards = document.querySelectorAll('.announcement-card');
+        
+        announcementCards.forEach(card => {
+            const expandBtn = card.querySelector('.expand-btn');
+            
+            expandBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                card.classList.toggle('expanded');
+            });
+            
+            card.addEventListener('click', () => {
+                card.classList.toggle('expanded');
+            });
+        });
+        
+        // Events filter
+        const eventFilterBtns = document.querySelectorAll('.events-filter .filter-btn');
+        const pastEventCards = document.querySelectorAll('.past-event-card');
+        
+        eventFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Update active button
+                eventFilterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter events
+                pastEventCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // Gallery filter
+        const galleryFilterBtns = document.querySelectorAll('.gallery-filter .filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Update active button
+                galleryFilterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // Gallery lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const caption = item.querySelector('.gallery-overlay p').textContent;
+                
+                lightboxImage.src = img.src;
+                lightboxCaption.textContent = caption;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            // Placeholder for form submission logic
+            alert(`Thank you for your message, ${name}! We will get back to you at ${email} soon.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for fade-in animation
+        document.querySelectorAll('.stat-card, .mission-card, .event-card, .team-card, .gallery-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Initialize first announcement as expanded
+        if (announcementCards.length > 0) {
+            announcementCards[0].classList.add('expanded');
+        }
+        
+        // Prevent form inputs from being affected by scroll animations
+        document.querySelectorAll('input, textarea').forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+        });
+        
+        // Add loading animation for images
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('load', () => {
+                img.style.opacity = '1';
+            });
+            
+            if (img.complete) {
+                img.style.opacity = '1';
+            }
+        });
+    </script>
+</body>
+</html>
+
+

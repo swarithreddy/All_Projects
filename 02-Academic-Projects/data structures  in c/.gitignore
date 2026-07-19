@@ -1,0 +1,9 @@
+# Ignore compiled binaries
+*.exe
+*.o
+*.out
+
+# Visual Studio / Code artifacts
+.vscode/
+*.user
+*~

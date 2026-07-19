@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "lab.dtd">
+<books>
+   <book>
+           <title>Programming the World Wide Web</title>
+           <author>Robert W. Sebesta</author>
+		   <isbn>1234-5678</isbn>
+           <publisher>Tata McGraw-Hill</publisher>
+           <edition>Seventh</edition>
+		   <price>300</price>
+   </book>
+   <book>
+           <title>Web Technologies</title>
+           <author>Uttam K Roy</author>
+		   <isbn>2345-1234</isbn>
+           <publisher>Oxford University Press</publisher>
+           <edition>First</edition>
+		   <price>350</price>
+   </book>
+   <book>
+           <title>The Complete Reference PHP</title>
+           <author>Steven Holzner</author>
+		   <isbn>4567-8970</isbn>
+           <publisher>Tata McGraw-Hill</publisher>
+           <edition>Second</edition>
+		   <price>500</price>
+   </book>
+   <book>
+           <title>Java Script</title>
+           <author>D Flanagan</author>
+		   <isbn>1234-9876</isbn>
+           <publisher>Tata</publisher>
+           <edition>Second</edition>
+		   <price>350</price>
+   </book>
+   <book>
+           <title>Web Programming, Building Internet Applications ,  2nd edition , Wiley</title>
+           <author>Chris Bates</author>
+		   <isbn>3456-8976</isbn>
+           <publisher>Wiley</publisher>
+           <edition>Second</edition>
+		   <price>240</price>
+   </book>
+   
+</books>

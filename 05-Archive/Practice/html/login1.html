@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color : grey;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            /* margin: 100px ; */
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+            margin: 100px auto;
+            width: 300px;
+        }
+        button{
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;   
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div>
+            <h1>Login Form</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br> 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit" onclick="validate()">Login</button>
+        </div>
+    </form>
+
+<script>
+    function validate(){
+        pass=document.getElementById("password").value;
+        user=document.getElementById("username").value;
+        if(user.length < 5){
+            alert("Username must be at least 5 characters long");
+            return false;
+        }       
+        if(user==""){
+            alert("Username cannot be empty");
+            return false;
+        }
+        if(pass==""){
+            alert("Password cannot be empty");
+            return false;
+        }
+        if(pass.length < 8){
+            alert("Password must be at least 8 characters long");
+            return false;
+        }
+        if(!/[A-Z]/.test(pass)){
+            alert("Password must contain at least one uppercase letter");
+            return false;
+        }
+        if(!/[a-z]/.test(pass)){
+            alert("Password must contain at least one lowercase letter");
+            return false;
+        }
+        if(!/[0-9]/.test(pass)){
+            alert("Password must contain at least one number");
+            return false;
+        }
+        if(!/[!@#$%^&*]/.test(pass)){
+            alert("Password must contain at least one special character (!@#$%^&*)");
+            return false;
+        }
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+attendance.xlsx
+known_faces/
+*.pyc
+__pycache__/
