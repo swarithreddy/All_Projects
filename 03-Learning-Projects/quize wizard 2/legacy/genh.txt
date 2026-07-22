@@ -1,0 +1,179 @@
+1
+What is the rarest blood type?
+    A
+    B
+    AB-
+    O
+3
+Explanation: AB- is the rarest blood type in the world, found in less than 1% of the population.
+
+2
+What is the speed of light in a vacuum?
+    300,000 km/s
+    150,000 km/s
+    450,000 km/s
+    600,000 km/s
+1
+Explanation: The speed of light in a vacuum is approximately 300,000 kilometers per second (km/s).
+
+3
+Who discovered the electron?
+    Isaac Newton
+    Albert Einstein
+    J.J. Thomson
+    Niels Bohr
+3
+Explanation: J.J. Thomson discovered the electron in 1897 through his experiments with cathode rays.
+
+4
+What is the most abundant gas in the Earth's atmosphere?
+    Oxygen
+    Nitrogen
+    Carbon Dioxide
+    Argon
+2
+Explanation: Nitrogen makes up about 78% of the Earth's atmosphere, making it the most abundant gas.
+
+5
+Which country has the most natural lakes?
+    Canada
+    Russia
+    Brazil
+    United States
+1
+Explanation: Canada has the most natural lakes in the world, with over 2 million lakes.
+
+6
+What is the chemical formula for table salt?
+    NaCl
+    KCl
+    Na2SO4
+    CaCO3
+1
+Explanation: NaCl is the chemical formula for table salt, consisting of sodium (Na) and chlorine (Cl).
+
+7
+Who wrote 'War and Peace'?
+    Leo Tolstoy
+    Fyodor Dostoevsky
+    Anton Chekhov
+    Ivan Turgenev
+1
+Explanation: Leo Tolstoy, a Russian author, wrote 'War and Peace', a novel set during the Napoleonic Wars.
+
+8
+What is the hardest known material?
+    Diamond
+    Graphene
+    Boron Nitride
+    Silicon Carbide
+1
+Explanation: Diamond is the hardest known natural material, with a Mohs hardness scale rating of 10.
+
+9
+Which planet has the strongest gravity?
+    Earth
+    Jupiter
+    Saturn
+    Neptune
+2
+Explanation: Jupiter has the strongest gravity of any planet in our solar system due to its massive size.
+
+10
+What is the largest organ in the human body?
+    Heart
+    Liver
+    Skin
+    Lungs
+3
+Explanation: The skin is the largest organ in the human body, covering an average area of about 2 square meters.
+
+11
+Who painted 'The Starry Night'?
+    Vincent van Gogh
+    Pablo Picasso
+    Claude Monet
+    Edvard Munch
+1
+Explanation: Vincent van Gogh painted 'The Starry Night', a famous work depicting a swirling night sky.
+
+12
+What is the capital of Iceland?
+    Reykjavik
+    Oslo
+    Helsinki
+    Copenhagen
+1
+Explanation: Reykjavik is the capital city of Iceland, known for its geothermal activity and vibrant culture.
+
+13
+Which element has the highest atomic number?
+    Uranium
+    Plutonium
+    Oganesson
+    Californium
+3
+Explanation: Oganesson has the highest atomic number (118) of all known elements.
+
+14
+What is the largest continent by area?
+    Africa
+    Asia
+    Europe
+    North America
+2
+Explanation: Asia is the largest continent by area, covering about 44.58 million square kilometers.
+
+15
+Who was the first person to reach the South Pole?
+    Robert Falcon Scott
+    Roald Amundsen
+    Ernest Shackleton
+    Edmund Hillary
+2
+Explanation: Roald Amundsen, a Norwegian explorer, was the first person to reach the South Pole in 1911.
+
+16
+What is the currency of Switzerland?
+    Euro
+    Franc
+    Dollar
+    Pound
+2
+Explanation: The Swiss franc is the official currency of Switzerland, known for its stability and security.
+
+17
+Which planet is known as the Blue Planet?
+    Earth
+    Neptune
+    Uranus
+    Saturn
+1
+Explanation: Earth is known as the Blue Planet due to its abundant water and blue appearance from space.
+
+18
+What is the largest species of bird?
+    Eagle
+    Ostrich
+    Albatross
+    Penguin
+2
+Explanation: The ostrich is the largest species of bird, capable of reaching heights of up to 9 feet.
+
+19
+Who wrote 'The Divine Comedy'?
+    Dante Alighieri
+    Geoffrey Chaucer
+    John Milton
+    William Blake
+1
+Explanation: Dante Alighieri wrote 'The Divine Comedy', an epic poem describing the journey through Hell, Purgatory, and Paradise.
+
+20
+What is the capital of South Korea?
+    Seoul
+    Busan
+    Incheon
+    Daegu
+1
+Explanation: Seoul is the capital city of South Korea, known for its modern skyscrapers and historical sites.

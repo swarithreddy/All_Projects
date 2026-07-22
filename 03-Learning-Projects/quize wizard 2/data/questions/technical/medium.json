@@ -1,0 +1,246 @@
+{
+  "category": "technical",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "What is the primary purpose of an API?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To allow different software applications to communicate",
+        "To display data"
+      ],
+      "answer_index": 3,
+      "explanation": "An API (Application Programming Interface) allows different software applications to communicate with each other."
+    },
+    {
+      "id": 2,
+      "prompt": "Which of the following is a version control system?",
+      "options": [
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "Jenkins"
+      ],
+      "answer_index": 1,
+      "explanation": "Git is a version control system used to track changes in source code during software development."
+    },
+    {
+      "id": 3,
+      "prompt": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "answer_index": 1,
+      "explanation": "CSS stands for Cascading Style Sheets, used for describing the presentation of web pages."
+    },
+    {
+      "id": 4,
+      "prompt": "Which of the following is a NoSQL database?",
+      "options": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite"
+      ],
+      "answer_index": 3,
+      "explanation": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents."
+    },
+    {
+      "id": 5,
+      "prompt": "What is the main function of a load balancer?",
+      "options": [
+        "To store data",
+        "To distribute network traffic",
+        "To process data",
+        "To display data"
+      ],
+      "answer_index": 2,
+      "explanation": "A load balancer distributes network traffic across multiple servers to ensure reliability and performance."
+    },
+    {
+      "id": 6,
+      "prompt": "Which programming language is known for its use in data analysis and machine learning?",
+      "options": [
+        "Java",
+        "C++",
+        "Python",
+        "Ruby"
+      ],
+      "answer_index": 3,
+      "explanation": "Python is widely used in data analysis and machine learning due to its simplicity and extensive libraries."
+    },
+    {
+      "id": 7,
+      "prompt": "What does REST stand for in web services?",
+      "options": [
+        "Representational State Transfer",
+        "Remote State Transfer",
+        "Representational Service Transfer",
+        "Remote Service Transfer"
+      ],
+      "answer_index": 1,
+      "explanation": "REST stands for Representational State Transfer, an architectural style for designing networked applications."
+    },
+    {
+      "id": 8,
+      "prompt": "Which of the following is a continuous integration tool?",
+      "options": [
+        "Git",
+        "Docker",
+        "Jenkins",
+        "Kubernetes"
+      ],
+      "answer_index": 3,
+      "explanation": "Jenkins is a continuous integration tool that automates the process of building and testing software."
+    },
+    {
+      "id": 9,
+      "prompt": "What is the main purpose of a DNS server?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To translate domain names to IP addresses",
+        "To display data"
+      ],
+      "answer_index": 3,
+      "explanation": "A DNS (Domain Name System) server translates domain names to IP addresses, allowing browsers to locate websites."
+    },
+    {
+      "id": 10,
+      "prompt": "Which of the following is a front-end JavaScript framework?",
+      "options": [
+        "Django",
+        "Flask",
+        "Angular",
+        "Spring"
+      ],
+      "answer_index": 3,
+      "explanation": "Angular is a front-end JavaScript framework used for building dynamic web applications."
+    },
+    {
+      "id": 11,
+      "prompt": "What does HTTP stand for?",
+      "options": [
+        "Hyper Text Transfer Protocol",
+        "High Text Transfer Protocol",
+        "Hyper Tabular Transfer Protocol",
+        "None of these"
+      ],
+      "answer_index": 1,
+      "explanation": "HTTP stands for Hyper Text Transfer Protocol, used for transmitting web pages over the internet."
+    },
+    {
+      "id": 12,
+      "prompt": "Which of the following is a cloud computing platform?",
+      "options": [
+        "GitHub",
+        "AWS",
+        "Jenkins",
+        "Docker"
+      ],
+      "answer_index": 2,
+      "explanation": "AWS (Amazon Web Services) is a cloud computing platform that provides a wide range of cloud services."
+    },
+    {
+      "id": 13,
+      "prompt": "What is the main function of a proxy server?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To act as an intermediary between a client and a server",
+        "To display data"
+      ],
+      "answer_index": 3,
+      "explanation": "A proxy server acts as an intermediary between a client and a server, providing security and performance benefits."
+    },
+    {
+      "id": 14,
+      "prompt": "Which of the following is a relational database management system?",
+      "options": [
+        "MongoDB",
+        "Redis",
+        "MySQL",
+        "Cassandra"
+      ],
+      "answer_index": 3,
+      "explanation": "MySQL is a relational database management system that uses structured query language (SQL) for managing data."
+    },
+    {
+      "id": 15,
+      "prompt": "What does JSON stand for?",
+      "options": [
+        "JavaScript Object Notation",
+        "JavaScript Online Notation",
+        "JavaScript Object Network",
+        "JavaScript Online Network"
+      ],
+      "answer_index": 1,
+      "explanation": "JSON stands for JavaScript Object Notation, a lightweight data interchange format."
+    },
+    {
+      "id": 16,
+      "prompt": "Which of the following is a back-end framework for web development?",
+      "options": [
+        "React",
+        "Vue",
+        "Angular",
+        "Django"
+      ],
+      "answer_index": 4,
+      "explanation": "Django is a back-end framework for web development, written in Python, known for its simplicity and robustness."
+    },
+    {
+      "id": 17,
+      "prompt": "What is the main purpose of a cache?",
+      "options": [
+        "To store frequently accessed data for quick retrieval",
+        "To process data",
+        "To display data",
+        "To transfer data"
+      ],
+      "answer_index": 1,
+      "explanation": "A cache stores frequently accessed data for quick retrieval, improving the performance of applications."
+    },
+    {
+      "id": 18,
+      "prompt": "Which of the following is a containerization platform?",
+      "options": [
+        "Git",
+        "Docker",
+        "Jenkins",
+        "Kubernetes"
+      ],
+      "answer_index": 2,
+      "explanation": "Docker is a containerization platform that allows developers to package applications and their dependencies into containers."
+    },
+    {
+      "id": 19,
+      "prompt": "What does XML stand for?",
+      "options": [
+        "Extensible Markup Language",
+        "Extra Markup Language",
+        "Extended Markup Language",
+        "Example Markup Language"
+      ],
+      "answer_index": 1,
+      "explanation": "XML stands for Extensible Markup Language, used to encode documents in a format that is both human-readable and machine-readable."
+    },
+    {
+      "id": 20,
+      "prompt": "Which of the following is a type of cyber attack?",
+      "options": [
+        "Phishing",
+        "Debugging",
+        "Compiling",
+        "Refactoring"
+      ],
+      "answer_index": 1,
+      "explanation": "Phishing is a type of cyber attack where attackers attempt to trick individuals into providing sensitive information by pretending to be a trustworthy entity."
+    }
+  ]
+}

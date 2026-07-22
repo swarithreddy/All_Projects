@@ -1,0 +1,246 @@
+{
+  "category": "general_knowledge",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "What is the rarest blood type?",
+      "options": [
+        "A",
+        "B",
+        "AB-",
+        "O"
+      ],
+      "answer_index": 3,
+      "explanation": "AB- is the rarest blood type in the world, found in less than 1% of the population."
+    },
+    {
+      "id": 2,
+      "prompt": "What is the speed of light in a vacuum?",
+      "options": [
+        "300,000 km/s",
+        "150,000 km/s",
+        "450,000 km/s",
+        "600,000 km/s"
+      ],
+      "answer_index": 1,
+      "explanation": "The speed of light in a vacuum is approximately 300,000 kilometers per second (km/s)."
+    },
+    {
+      "id": 3,
+      "prompt": "Who discovered the electron?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "J.J. Thomson",
+        "Niels Bohr"
+      ],
+      "answer_index": 3,
+      "explanation": "J.J. Thomson discovered the electron in 1897 through his experiments with cathode rays."
+    },
+    {
+      "id": 4,
+      "prompt": "What is the most abundant gas in the Earth's atmosphere?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon Dioxide",
+        "Argon"
+      ],
+      "answer_index": 2,
+      "explanation": "Nitrogen makes up about 78% of the Earth's atmosphere, making it the most abundant gas."
+    },
+    {
+      "id": 5,
+      "prompt": "Which country has the most natural lakes?",
+      "options": [
+        "Canada",
+        "Russia",
+        "Brazil",
+        "United States"
+      ],
+      "answer_index": 1,
+      "explanation": "Canada has the most natural lakes in the world, with over 2 million lakes."
+    },
+    {
+      "id": 6,
+      "prompt": "What is the chemical formula for table salt?",
+      "options": [
+        "NaCl",
+        "KCl",
+        "Na2SO4",
+        "CaCO3"
+      ],
+      "answer_index": 1,
+      "explanation": "NaCl is the chemical formula for table salt, consisting of sodium (Na) and chlorine (Cl)."
+    },
+    {
+      "id": 7,
+      "prompt": "Who wrote 'War and Peace'?",
+      "options": [
+        "Leo Tolstoy",
+        "Fyodor Dostoevsky",
+        "Anton Chekhov",
+        "Ivan Turgenev"
+      ],
+      "answer_index": 1,
+      "explanation": "Leo Tolstoy, a Russian author, wrote 'War and Peace', a novel set during the Napoleonic Wars."
+    },
+    {
+      "id": 8,
+      "prompt": "What is the hardest known material?",
+      "options": [
+        "Diamond",
+        "Graphene",
+        "Boron Nitride",
+        "Silicon Carbide"
+      ],
+      "answer_index": 1,
+      "explanation": "Diamond is the hardest known natural material, with a Mohs hardness scale rating of 10."
+    },
+    {
+      "id": 9,
+      "prompt": "Which planet has the strongest gravity?",
+      "options": [
+        "Earth",
+        "Jupiter",
+        "Saturn",
+        "Neptune"
+      ],
+      "answer_index": 2,
+      "explanation": "Jupiter has the strongest gravity of any planet in our solar system due to its massive size."
+    },
+    {
+      "id": 10,
+      "prompt": "What is the largest organ in the human body?",
+      "options": [
+        "Heart",
+        "Liver",
+        "Skin",
+        "Lungs"
+      ],
+      "answer_index": 3,
+      "explanation": "The skin is the largest organ in the human body, covering an average area of about 2 square meters."
+    },
+    {
+      "id": 11,
+      "prompt": "Who painted 'The Starry Night'?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet",
+        "Edvard Munch"
+      ],
+      "answer_index": 1,
+      "explanation": "Vincent van Gogh painted 'The Starry Night', a famous work depicting a swirling night sky."
+    },
+    {
+      "id": 12,
+      "prompt": "What is the capital of Iceland?",
+      "options": [
+        "Reykjavik",
+        "Oslo",
+        "Helsinki",
+        "Copenhagen"
+      ],
+      "answer_index": 1,
+      "explanation": "Reykjavik is the capital city of Iceland, known for its geothermal activity and vibrant culture."
+    },
+    {
+      "id": 13,
+      "prompt": "Which element has the highest atomic number?",
+      "options": [
+        "Uranium",
+        "Plutonium",
+        "Oganesson",
+        "Californium"
+      ],
+      "answer_index": 3,
+      "explanation": "Oganesson has the highest atomic number (118) of all known elements."
+    },
+    {
+      "id": 14,
+      "prompt": "What is the largest continent by area?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America"
+      ],
+      "answer_index": 2,
+      "explanation": "Asia is the largest continent by area, covering about 44.58 million square kilometers."
+    },
+    {
+      "id": 15,
+      "prompt": "Who was the first person to reach the South Pole?",
+      "options": [
+        "Robert Falcon Scott",
+        "Roald Amundsen",
+        "Ernest Shackleton",
+        "Edmund Hillary"
+      ],
+      "answer_index": 2,
+      "explanation": "Roald Amundsen, a Norwegian explorer, was the first person to reach the South Pole in 1911."
+    },
+    {
+      "id": 16,
+      "prompt": "What is the currency of Switzerland?",
+      "options": [
+        "Euro",
+        "Franc",
+        "Dollar",
+        "Pound"
+      ],
+      "answer_index": 2,
+      "explanation": "The Swiss franc is the official currency of Switzerland, known for its stability and security."
+    },
+    {
+      "id": 17,
+      "prompt": "Which planet is known as the Blue Planet?",
+      "options": [
+        "Earth",
+        "Neptune",
+        "Uranus",
+        "Saturn"
+      ],
+      "answer_index": 1,
+      "explanation": "Earth is known as the Blue Planet due to its abundant water and blue appearance from space."
+    },
+    {
+      "id": 18,
+      "prompt": "What is the largest species of bird?",
+      "options": [
+        "Eagle",
+        "Ostrich",
+        "Albatross",
+        "Penguin"
+      ],
+      "answer_index": 2,
+      "explanation": "The ostrich is the largest species of bird, capable of reaching heights of up to 9 feet."
+    },
+    {
+      "id": 19,
+      "prompt": "Who wrote 'The Divine Comedy'?",
+      "options": [
+        "Dante Alighieri",
+        "Geoffrey Chaucer",
+        "John Milton",
+        "William Blake"
+      ],
+      "answer_index": 1,
+      "explanation": "Dante Alighieri wrote 'The Divine Comedy', an epic poem describing the journey through Hell, Purgatory, and Paradise."
+    },
+    {
+      "id": 20,
+      "prompt": "What is the capital of South Korea?",
+      "options": [
+        "Seoul",
+        "Busan",
+        "Incheon",
+        "Daegu"
+      ],
+      "answer_index": 1,
+      "explanation": "Seoul is the capital city of South Korea, known for its modern skyscrapers and historical sites."
+    }
+  ]
+}

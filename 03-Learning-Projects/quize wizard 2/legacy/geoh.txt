@@ -1,0 +1,179 @@
+1
+Which country has the most UNESCO World Heritage Sites?
+    China
+    Italy
+    Spain
+    Germany
+2
+Explanation: Italy has the most UNESCO World Heritage Sites, with over 55 sites recognized for their cultural and natural significance.
+
+2
+What is the capital of Kazakhstan?
+    Almaty
+    Astana
+    Shymkent
+    Karaganda
+2
+Explanation: Astana, now known as Nur-Sultan, is the capital city of Kazakhstan, known for its futuristic architecture.
+
+3
+Which country is the largest producer of uranium?
+    Canada
+    Australia
+    Kazakhstan
+    Russia
+3
+Explanation: Kazakhstan is the largest producer of uranium, supplying a significant portion of the world's uranium.
+
+4
+What is the official language of Ethiopia?
+    Amharic
+    Oromo
+    Tigrinya
+    Somali
+1
+Explanation: Amharic is the official language of Ethiopia, used in government and education.
+
+5
+Which country is known as the Land of the White Elephant?
+    Thailand
+    India
+    Sri Lanka
+    Myanmar
+1
+Explanation: Thailand is known as the Land of the White Elephant due to the cultural and historical significance of white elephants in Thai society.
+
+6
+What is the capital of Uzbekistan?
+    Tashkent
+    Samarkand
+    Bukhara
+    Khiva
+1
+Explanation: Tashkent is the capital city of Uzbekistan, known for its mix of modern and Soviet-era architecture.
+
+7
+Which country is the largest producer of platinum?
+    South Africa
+    Russia
+    Canada
+    Zimbabwe
+1
+Explanation: South Africa is the largest producer of platinum, with extensive mining operations.
+
+8
+What is the official language of Lebanon?
+    Arabic
+    French
+    English
+    Armenian
+1
+Explanation: Arabic is the official language of Lebanon, used in government, media, and education.
+
+9
+Which country is known as the Land of the Long White Cloud?
+    Australia
+    New Zealand
+    Fiji
+    Samoa
+2
+Explanation: New Zealand is known as the Land of the Long White Cloud, a translation of its Maori name, Aotearoa.
+
+10
+What is the capital of Azerbaijan?
+    Baku
+    Ganja
+    Sumqayit
+    Mingachevir
+1
+Explanation: Baku is the capital city of Azerbaijan, known for its medieval walled city and modern skyline.
+
+11
+Which country is the largest producer of tea?
+    India
+    China
+    Sri Lanka
+    Kenya
+2
+Explanation: China is the largest producer of tea, with a long history of tea cultivation and consumption.
+
+12
+What is the official language of Afghanistan?
+    Pashto
+    Dari
+    Urdu
+    Arabic
+2
+Explanation: Dari, a variety of Persian, is one of the official languages of Afghanistan, alongside Pashto.
+
+13
+Which country is known as the Land of the Free?
+    United States
+    Canada
+    Thailand
+    Australia
+3
+Explanation: Thailand is often referred to as the Land of the Free because it is the only Southeast Asian country never to have been colonized by a European power.
+
+14
+What is the capital of Myanmar?
+    Yangon
+    Mandalay
+    Naypyidaw
+    Bago
+3
+Explanation: Naypyidaw is the capital city of Myanmar, officially designated as the capital in 2005.
+
+15
+Which country is the largest producer of rubber?
+    Thailand
+    Indonesia
+    Malaysia
+    Vietnam
+1
+Explanation: Thailand is the largest producer of natural rubber, with extensive rubber plantations.
+
+16
+What is the official language of Algeria?
+    Arabic
+    French
+    Berber
+    Spanish
+1
+Explanation: Arabic is the official language of Algeria, used in government, media, and education.
+
+17
+Which country is known as the Land of the Incas?
+    Mexico
+    Peru
+    Bolivia
+    Ecuador
+2
+Explanation: Peru is known as the Land of the Incas, home to the ancient Inca civilization and the famous site of Machu Picchu.
+
+18
+What is the capital of Mongolia?
+    Ulaanbaatar
+    Erdenet
+    Darkhan
+    Choibalsan
+1
+Explanation: Ulaanbaatar is the capital city of Mongolia, known for its cold winters and historical significance.
+
+19
+Which country is the largest producer of copper?
+    Chile
+    Peru
+    China
+    United States
+1
+Explanation: Chile is the largest producer of copper, with vast mining operations in the Atacama Desert.
+
+20
+What is the official language of Morocco?
+    Arabic
+    French
+    Berber
+    Spanish
+1
+Explanation: Arabic is the official language of Morocco, used in government, media, and education.

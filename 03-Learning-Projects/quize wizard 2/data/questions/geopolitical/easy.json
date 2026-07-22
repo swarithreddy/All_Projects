@@ -1,0 +1,246 @@
+{
+  "category": "geopolitical",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "What is the capital of Canada?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa",
+        "Montreal"
+      ],
+      "answer_index": 3,
+      "explanation": "Ottawa is the capital city of Canada, located in the province of Ontario."
+    },
+    {
+      "id": 2,
+      "prompt": "Which country is known as the Land of the Rising Sun?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer_index": 2,
+      "explanation": "Japan is called the Land of the Rising Sun because it is located to the east of the Asian continent, where the sun rises."
+    },
+    {
+      "id": 3,
+      "prompt": "What is the largest country in the world by area?",
+      "options": [
+        "Canada",
+        "China",
+        "United States",
+        "Russia"
+      ],
+      "answer_index": 4,
+      "explanation": "Russia is the largest country in the world by area, covering over 17 million square kilometers."
+    },
+    {
+      "id": 4,
+      "prompt": "Which continent is known as the Dark Continent?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Europe",
+        "South America"
+      ],
+      "answer_index": 2,
+      "explanation": "Africa is often referred to as the Dark Continent due to its vast, unexplored interior during the 19th century."
+    },
+    {
+      "id": 5,
+      "prompt": "What is the official language of Brazil?",
+      "options": [
+        "Spanish",
+        "Portuguese",
+        "French",
+        "English"
+      ],
+      "answer_index": 2,
+      "explanation": "Portuguese is the official language of Brazil, a legacy of its colonial history."
+    },
+    {
+      "id": 6,
+      "prompt": "Which country is known for its neutrality and hosts many international organizations?",
+      "options": [
+        "Sweden",
+        "Norway",
+        "Switzerland",
+        "Denmark"
+      ],
+      "answer_index": 3,
+      "explanation": "Switzerland is known for its policy of neutrality and hosts many international organizations, including the Red Cross."
+    },
+    {
+      "id": 7,
+      "prompt": "What is the capital of Australia?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Brisbane"
+      ],
+      "answer_index": 3,
+      "explanation": "Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne."
+    },
+    {
+      "id": 8,
+      "prompt": "Which country is the largest producer of coffee in the world?",
+      "options": [
+        "Colombia",
+        "Vietnam",
+        "Brazil",
+        "Ethiopia"
+      ],
+      "answer_index": 3,
+      "explanation": "Brazil is the largest producer of coffee in the world, accounting for about one-third of global production."
+    },
+    {
+      "id": 9,
+      "prompt": "What is the smallest country in the world by area?",
+      "options": [
+        "Monaco",
+        "Vatican City",
+        "San Marino",
+        "Liechtenstein"
+      ],
+      "answer_index": 2,
+      "explanation": "Vatican City is the smallest country in the world by area, covering just 44 hectares."
+    },
+    {
+      "id": 10,
+      "prompt": "Which ocean is the largest by surface area?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
+      ],
+      "answer_index": 4,
+      "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth, covering more than 63 million square miles."
+    },
+    {
+      "id": 11,
+      "prompt": "What is the capital of Egypt?",
+      "options": [
+        "Cairo",
+        "Alexandria",
+        "Giza",
+        "Luxor"
+      ],
+      "answer_index": 1,
+      "explanation": "Cairo is the capital city of Egypt, known for its rich history and proximity to the pyramids of Giza."
+    },
+    {
+      "id": 12,
+      "prompt": "Which country is known as the Land of a Thousand Lakes?",
+      "options": [
+        "Norway",
+        "Sweden",
+        "Finland",
+        "Canada"
+      ],
+      "answer_index": 3,
+      "explanation": "Finland is known as the Land of a Thousand Lakes due to its numerous lakes, estimated to be around 188,000."
+    },
+    {
+      "id": 13,
+      "prompt": "What is the official language of Egypt?",
+      "options": [
+        "Arabic",
+        "English",
+        "French",
+        "Spanish"
+      ],
+      "answer_index": 1,
+      "explanation": "Arabic is the official language of Egypt, used in government, media, and education."
+    },
+    {
+      "id": 14,
+      "prompt": "Which country is the largest exporter of oil?",
+      "options": [
+        "United States",
+        "Saudi Arabia",
+        "Russia",
+        "Canada"
+      ],
+      "answer_index": 2,
+      "explanation": "Saudi Arabia is the largest exporter of oil, with significant reserves and production capacity."
+    },
+    {
+      "id": 15,
+      "prompt": "What is the capital of South Korea?",
+      "options": [
+        "Seoul",
+        "Busan",
+        "Incheon",
+        "Daegu"
+      ],
+      "answer_index": 1,
+      "explanation": "Seoul is the capital city of South Korea, known for its modern skyscrapers and historical sites."
+    },
+    {
+      "id": 16,
+      "prompt": "Which country is known for its fjords?",
+      "options": [
+        "Sweden",
+        "Norway",
+        "Finland",
+        "Denmark"
+      ],
+      "answer_index": 2,
+      "explanation": "Norway is famous for its fjords, which are deep, glacially carved valleys filled with seawater."
+    },
+    {
+      "id": 17,
+      "prompt": "What is the capital of India?",
+      "options": [
+        "Mumbai",
+        "Kolkata",
+        "New Delhi",
+        "Bangalore"
+      ],
+      "answer_index": 3,
+      "explanation": "New Delhi is the capital city of India, serving as the seat of all three branches of the government."
+    },
+    {
+      "id": 18,
+      "prompt": "Which country is known as the Pearl of the Indian Ocean?",
+      "options": [
+        "Maldives",
+        "Sri Lanka",
+        "Seychelles",
+        "Mauritius"
+      ],
+      "answer_index": 2,
+      "explanation": "Sri Lanka is often referred to as the Pearl of the Indian Ocean due to its natural beauty and strategic location."
+    },
+    {
+      "id": 19,
+      "prompt": "What is the capital of Italy?",
+      "options": [
+        "Milan",
+        "Venice",
+        "Rome",
+        "Florence"
+      ],
+      "answer_index": 3,
+      "explanation": "Rome is the capital city of Italy, known for its rich history and landmarks such as the Colosseum and Vatican City."
+    },
+    {
+      "id": 20,
+      "prompt": "Which country is known as the Land of Fire and Ice?",
+      "options": [
+        "Iceland",
+        "Greenland",
+        "Norway",
+        "Finland"
+      ],
+      "answer_index": 1,
+      "explanation": "Iceland is known as the Land of Fire and Ice due to its volcanic activity and numerous glaciers."
+    }
+  ]
+}

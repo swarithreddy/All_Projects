@@ -1,0 +1,179 @@
+1
+What is the capital of France?
+    Paris
+    London
+    Berlin
+    Madrid
+1
+Explanation: Paris is the capital and most populous city of France, known for its historical landmarks and cultural significance.
+
+2
+What is the largest planet in our solar system?
+    Earth
+    Mars
+    Jupiter
+    Saturn
+3
+Explanation: Jupiter is the largest planet in our solar system, with a diameter of about 142,984 km, and it has a massive gravitational pull.
+
+3
+Who wrote 'Hamlet'?
+    Charles Dickens
+    William Shakespeare
+    Mark Twain
+    J.K. Rowling
+2
+Explanation: William Shakespeare, an English playwright and poet, wrote 'Hamlet', one of his most famous tragedies.
+
+4
+What is the chemical symbol for water?
+    H2O
+    CO2
+    O2
+    NaCl
+1
+Explanation: H2O is the chemical formula for water, consisting of two hydrogen atoms and one oxygen atom, essential for all known forms of life.
+
+5
+Which country is known as the Land of the Rising Sun?
+    China
+    Japan
+    South Korea
+    Thailand
+    2
+Explanation: Japan is called the Land of the Rising Sun because it is located to the east of the Asian continent, where the sun rises.
+
+6
+What is the smallest prime number?
+    1
+    2
+    3
+    5
+2
+Explanation: 2 is the smallest prime number and the only even prime number, as it is divisible only by 1 and itself.
+
+7
+Who painted the Mona Lisa?
+    Vincent van Gogh
+    Pablo Picasso
+    Leonardo da Vinci
+    Claude Monet
+3
+Explanation: Leonardo da Vinci, an Italian Renaissance artist, painted the Mona Lisa, which is renowned for its artistic mastery and enigmatic expression.
+
+8
+What is the hardest natural substance on Earth?
+    Gold
+    Iron
+    Diamond
+    Platinum
+3
+Explanation: Diamond is the hardest natural substance known, with a Mohs hardness scale rating of 10, making it highly resistant to scratching.
+
+9
+Which planet is known as the Red Planet?
+    Venus
+    Mars
+    Jupiter
+    Saturn
+2
+Explanation: Mars is known as the Red Planet due to its reddish appearance, caused by iron oxide (rust) on its surface.
+
+10
+What is the largest ocean on Earth?
+    Atlantic Ocean
+    Indian Ocean
+    Arctic Ocean
+    Pacific Ocean
+4
+Explanation: The Pacific Ocean is the largest and deepest ocean on Earth, covering more than 63 million square miles.
+
+11
+Who discovered penicillin?
+    Marie Curie
+    Alexander Fleming
+    Louis Pasteur
+    Isaac Newton
+2
+Explanation: Alexander Fleming discovered penicillin in 1928, which became the first widely used antibiotic and revolutionized medicine.
+
+12
+What is the main ingredient in guacamole?
+    Tomato
+    Avocado
+    Onion
+    Pepper
+2
+Explanation: Avocado is the main ingredient in guacamole, a traditional Mexican dip known for its creamy texture and rich flavor.
+
+13
+Which element has the chemical symbol 'O'?
+    Oxygen
+    Gold
+    Silver
+    Iron
+1
+Explanation: 'O' is the chemical symbol for oxygen, a vital element for respiration in most living organisms.
+
+14
+What is the tallest mountain in the world?
+    K2
+    Kangchenjunga
+    Mount Everest
+    Lhotse
+3
+Explanation: Mount Everest is the tallest mountain in the world, standing at 8,848 meters (29,029 feet) above sea level.
+
+15
+Who was the first President of the United States?
+    Thomas Jefferson
+    Abraham Lincoln
+    George Washington
+    John Adams
+3
+Explanation: George Washington was the first President of the United States, serving from 1789 to 1797, and is often called the "Father of His Country."
+
+16
+What is the currency of Japan?
+    Yen
+    Dollar
+    Euro
+    Pound
+1
+Explanation: The yen is the official currency of Japan, symbolized by ¥ and known for its stability.
+
+17
+Which planet is closest to the Sun?
+    Venus
+    Earth
+    Mercury
+    Mars
+3
+Explanation: Mercury is the closest planet to the Sun, orbiting at an average distance of about 58 million kilometers (36 million miles).
+
+18
+What is the largest mammal in the world?
+    Elephant
+    Blue Whale
+    Giraffe
+    Hippopotamus
+2
+Explanation: The blue whale is the largest mammal in the world, reaching lengths of up to 100 feet and weights of up to 200 tons.
+
+19
+Who wrote 'Pride and Prejudice'?
+    Jane Austen
+    Emily Brontë
+    Charles Dickens
+    George Orwell
+1
+Explanation: Jane Austen, an English novelist, wrote 'Pride and Prejudice', a classic novel of manners published in 1813.
+
+20
+What is the capital of Australia?
+    Sydney
+    Melbourne
+    Canberra
+    Brisbane
+3
+Explanation: Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne.

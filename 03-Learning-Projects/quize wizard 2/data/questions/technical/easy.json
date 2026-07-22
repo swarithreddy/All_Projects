@@ -1,0 +1,246 @@
+{
+  "category": "technical",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Text Markup Language",
+        "Hyper Tabular Markup Language",
+        "None of these"
+      ],
+      "answer_index": 1,
+      "explanation": "HTML stands for Hyper Text Markup Language, which is used to create web pages."
+    },
+    {
+      "id": 2,
+      "prompt": "What is the main function of the CPU?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To display data",
+        "To transfer data"
+      ],
+      "answer_index": 2,
+      "explanation": "The CPU (Central Processing Unit) processes data and executes instructions in a computer."
+    },
+    {
+      "id": 3,
+      "prompt": "Which language is primarily used for web development?",
+      "options": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++"
+      ],
+      "answer_index": 3,
+      "explanation": "JavaScript is widely used for web development to create interactive effects within web browsers."
+    },
+    {
+      "id": 4,
+      "prompt": "What does RAM stand for?",
+      "options": [
+        "Random Access Memory",
+        "Read Access Memory",
+        "Run Access Memory",
+        "Random Allow Memory"
+      ],
+      "answer_index": 1,
+      "explanation": "RAM stands for Random Access Memory, which is used for temporary storage while a computer is running."
+    },
+    {
+      "id": 5,
+      "prompt": "Which company developed the Windows operating system?",
+      "options": [
+        "Apple",
+        "Google",
+        "Microsoft",
+        "IBM"
+      ],
+      "answer_index": 3,
+      "explanation": "Microsoft developed the Windows operating system, which is widely used on personal computers."
+    },
+    {
+      "id": 6,
+      "prompt": "What is the purpose of an IP address?",
+      "options": [
+        "To identify a device on a network",
+        "To store data",
+        "To encrypt data",
+        "To display data"
+      ],
+      "answer_index": 1,
+      "explanation": "An IP address uniquely identifies a device on a network, allowing it to communicate with other devices."
+    },
+    {
+      "id": 7,
+      "prompt": "Which of the following is a programming language?",
+      "options": [
+        "HTML",
+        "CSS",
+        "Java",
+        "SQL"
+      ],
+      "answer_index": 3,
+      "explanation": "Java is a programming language used to develop applications for various platforms."
+    },
+    {
+      "id": 8,
+      "prompt": "What does SQL stand for?",
+      "options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Standard Query Language",
+        "Sequential Query Language"
+      ],
+      "answer_index": 1,
+      "explanation": "SQL stands for Structured Query Language, used for managing and manipulating databases."
+    },
+    {
+      "id": 9,
+      "prompt": "Which device is used to connect a computer to a network?",
+      "options": [
+        "Monitor",
+        "Keyboard",
+        "Router",
+        "Printer"
+      ],
+      "answer_index": 3,
+      "explanation": "A router connects a computer to a network, allowing it to communicate with other devices."
+    },
+    {
+      "id": 10,
+      "prompt": "What is the main purpose of an operating system?",
+      "options": [
+        "To manage hardware and software resources",
+        "To create documents",
+        "To browse the internet",
+        "To play games"
+      ],
+      "answer_index": 1,
+      "explanation": "An operating system manages hardware and software resources, providing a platform for applications to run."
+    },
+    {
+      "id": 11,
+      "prompt": "Which of the following is an example of an input device?",
+      "options": [
+        "Monitor",
+        "Printer",
+        "Keyboard",
+        "Speaker"
+      ],
+      "answer_index": 3,
+      "explanation": "A keyboard is an input device used to enter data into a computer."
+    },
+    {
+      "id": 12,
+      "prompt": "What does HTTP stand for?",
+      "options": [
+        "Hyper Text Transfer Protocol",
+        "High Text Transfer Protocol",
+        "Hyper Tabular Transfer Protocol",
+        "None of these"
+      ],
+      "answer_index": 1,
+      "explanation": "HTTP stands for Hyper Text Transfer Protocol, used for transmitting web pages over the internet."
+    },
+    {
+      "id": 13,
+      "prompt": "Which company developed the Android operating system?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "IBM"
+      ],
+      "answer_index": 3,
+      "explanation": "Google developed the Android operating system, which is widely used on mobile devices."
+    },
+    {
+      "id": 14,
+      "prompt": "What is the main function of a firewall?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To display data",
+        "To protect a network"
+      ],
+      "answer_index": 4,
+      "explanation": "A firewall protects a network by controlling incoming and outgoing network traffic based on security rules."
+    },
+    {
+      "id": 15,
+      "prompt": "Which of the following is a type of malware?",
+      "options": [
+        "Antivirus",
+        "Firewall",
+        "Trojan",
+        "Router"
+      ],
+      "answer_index": 3,
+      "explanation": "A Trojan is a type of malware that disguises itself as legitimate software to gain access to a system."
+    },
+    {
+      "id": 16,
+      "prompt": "What does USB stand for?",
+      "options": [
+        "Universal Serial Bus",
+        "Universal System Bus",
+        "Universal Storage Bus",
+        "Universal Service Bus"
+      ],
+      "answer_index": 1,
+      "explanation": "USB stands for Universal Serial Bus, a standard for connecting peripherals to a computer."
+    },
+    {
+      "id": 17,
+      "prompt": "Which language is used for styling web pages?",
+      "options": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "answer_index": 2,
+      "explanation": "CSS (Cascading Style Sheets) is used for styling web pages, defining the look and layout."
+    },
+    {
+      "id": 18,
+      "prompt": "What is the main purpose of a database?",
+      "options": [
+        "To store data",
+        "To process data",
+        "To display data",
+        "To transfer data"
+      ],
+      "answer_index": 1,
+      "explanation": "A database is used to store and manage data, allowing for efficient retrieval and manipulation."
+    },
+    {
+      "id": 19,
+      "prompt": "Which of the following is an example of an output device?",
+      "options": [
+        "Monitor",
+        "Keyboard",
+        "Mouse",
+        "Scanner"
+      ],
+      "answer_index": 1,
+      "explanation": "A monitor is an output device used to display information from a computer."
+    },
+    {
+      "id": 20,
+      "prompt": "What does LAN stand for?",
+      "options": [
+        "Local Area Network",
+        "Large Area Network",
+        "Long Area Network",
+        "Light Area Network"
+      ],
+      "answer_index": 1,
+      "explanation": "LAN stands for Local Area Network, a network that connects devices within a limited area, such as a building."
+    }
+  ]
+}

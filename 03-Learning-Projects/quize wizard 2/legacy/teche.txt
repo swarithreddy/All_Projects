@@ -1,0 +1,179 @@
+1
+What does HTML stand for?
+    Hyper Text Markup Language
+    High Text Markup Language
+    Hyper Tabular Markup Language
+    None of these
+1
+Explanation: HTML stands for Hyper Text Markup Language, which is used to create web pages.
+
+2
+What is the main function of the CPU?
+    To store data
+    To process data
+    To display data
+    To transfer data
+2
+Explanation: The CPU (Central Processing Unit) processes data and executes instructions in a computer.
+
+3
+Which language is primarily used for web development?
+    Python
+    Java
+    JavaScript
+    C++
+3
+Explanation: JavaScript is widely used for web development to create interactive effects within web browsers.
+
+4
+What does RAM stand for?
+    Random Access Memory
+    Read Access Memory
+    Run Access Memory
+    Random Allow Memory
+1
+Explanation: RAM stands for Random Access Memory, which is used for temporary storage while a computer is running.
+
+5
+Which company developed the Windows operating system?
+    Apple
+    Google
+    Microsoft
+    IBM
+3
+Explanation: Microsoft developed the Windows operating system, which is widely used on personal computers.
+
+6
+What is the purpose of an IP address?
+    To identify a device on a network
+    To store data
+    To encrypt data
+    To display data
+1
+Explanation: An IP address uniquely identifies a device on a network, allowing it to communicate with other devices.
+
+7
+Which of the following is a programming language?
+    HTML
+    CSS
+    Java
+    SQL
+3
+Explanation: Java is a programming language used to develop applications for various platforms.
+
+8
+What does SQL stand for?
+    Structured Query Language
+    Simple Query Language
+    Standard Query Language
+    Sequential Query Language
+1
+Explanation: SQL stands for Structured Query Language, used for managing and manipulating databases.
+
+9
+Which device is used to connect a computer to a network?
+    Monitor
+    Keyboard
+    Router
+    Printer
+3
+Explanation: A router connects a computer to a network, allowing it to communicate with other devices.
+
+10
+What is the main purpose of an operating system?
+    To manage hardware and software resources
+    To create documents
+    To browse the internet
+    To play games
+1
+Explanation: An operating system manages hardware and software resources, providing a platform for applications to run.
+
+11
+Which of the following is an example of an input device?
+    Monitor
+    Printer
+    Keyboard
+    Speaker
+3
+Explanation: A keyboard is an input device used to enter data into a computer.
+
+12
+What does HTTP stand for?
+    Hyper Text Transfer Protocol
+    High Text Transfer Protocol
+    Hyper Tabular Transfer Protocol
+    None of these
+1
+Explanation: HTTP stands for Hyper Text Transfer Protocol, used for transmitting web pages over the internet.
+
+13
+Which company developed the Android operating system?
+    Apple
+    Microsoft
+    Google
+    IBM
+3
+Explanation: Google developed the Android operating system, which is widely used on mobile devices.
+
+14
+What is the main function of a firewall?
+    To store data
+    To process data
+    To display data
+    To protect a network
+4
+Explanation: A firewall protects a network by controlling incoming and outgoing network traffic based on security rules.
+
+15
+Which of the following is a type of malware?
+    Antivirus
+    Firewall
+    Trojan
+    Router
+3
+Explanation: A Trojan is a type of malware that disguises itself as legitimate software to gain access to a system.
+
+16
+What does USB stand for?
+    Universal Serial Bus
+    Universal System Bus
+    Universal Storage Bus
+    Universal Service Bus
+1
+Explanation: USB stands for Universal Serial Bus, a standard for connecting peripherals to a computer.
+
+17
+Which language is used for styling web pages?
+    HTML
+    CSS
+    JavaScript
+    Python
+2
+Explanation: CSS (Cascading Style Sheets) is used for styling web pages, defining the look and layout.
+
+18
+What is the main purpose of a database?
+    To store data
+    To process data
+    To display data
+    To transfer data
+1
+Explanation: A database is used to store and manage data, allowing for efficient retrieval and manipulation.
+
+19
+Which of the following is an example of an output device?
+    Monitor
+    Keyboard
+    Mouse
+    Scanner
+1
+Explanation: A monitor is an output device used to display information from a computer.
+
+20
+What does LAN stand for?
+    Local Area Network
+    Large Area Network
+    Long Area Network
+    Light Area Network
+1
+Explanation: LAN stands for Local Area Network, a network that connects devices within a limited area, such as a building.

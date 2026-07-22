@@ -1,0 +1,24 @@
+# Bytecode / virtualenv
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.spec.bak
+
+# User / local
+.DS_Store
+Thumbs.db
+
+# Logs (runtime uses AppData; ignore local leftovers)
+*.log

@@ -1,0 +1,55 @@
+Sure, here's the tutorial 
+
+```
+Quiz Wizard: Terminal-Based Quiz Game Tutorial
+
+Welcome to Quiz Wizard, a terminal-based quiz game designed to challenge your knowledge across various domains. This tutorial will guide you through the features and functionalities of the game, ensuring you have a seamless experience.
+
+Main Menu Options
+Upon launching the game, you will be presented with the following options:
+1. Play
+2. Leaderboard
+3. Tutorial
+4. Exit
+
+The program will continue running until you select the Exit option.
+
+Leaderboard
+The Leaderboard is a text file that stores the names, ages, and scores of players. It arranges the scores in descending order, placing the top scorer at the top. This allows you to see how you rank against other players.
+
+Tutorial
+Selecting the Tutorial option will provide you with detailed information about the game, including how to play, the different quiz types, and the scoring system.
+
+Exit
+The Exit option is the only way to terminate the program. If you do not select this option, the game will continue running.
+
+Playing the Game
+When you choose the Play option, the game will prompt you to enter your name and age. This information will be displayed at the center of the terminal.
+
+Quiz Types
+Next, you will be asked to select the type of quiz you want to play. The available options are:
+1. General Knowledge
+2. Technical
+3. Geopolitical
+4. Exit Quiz
+
+Difficulty Levels
+After selecting the quiz type, you will choose the difficulty level:
+1. Easy
+2. Medium
+3. Hard
+4. Auto
+
+Auto Mode: In this mode, the difficulty level adjusts based on your performance. If you answer three questions correctly in a row, the difficulty increases. Conversely, if you answer three questions incorrectly, the difficulty decreases.
+
+Gameplay
+- Each question will be displayed with multiple-choice options.
+- You can exit the quiz at any time by pressing the Escape key.
+- Your score, name, and age will be displayed at the center of the screen at the end of the game.
+
+Scoring and Leaderboard Update
+At the end of the game, your score will be uploaded to the leaderboard and arranged according to your score. This allows you to see how you compare with other players.
+
+Conclusion
+We hope this tutorial helps you understand how to navigate and enjoy Quiz Wizard. Whether you're a first-time player or a seasoned quiz enthusiast, this game offers a fun and challenging experience. Happy quizzing!
+```

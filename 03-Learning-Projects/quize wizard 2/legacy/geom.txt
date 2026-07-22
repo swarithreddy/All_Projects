@@ -1,0 +1,179 @@
+1
+Which country has the largest population in the world?
+    India
+    United States
+    China
+    Indonesia
+3
+Explanation: China has the largest population in the world, with over 1.4 billion people.
+
+2
+What is the capital of Saudi Arabia?
+    Riyadh
+    Jeddah
+    Mecca
+    Medina
+1
+Explanation: Riyadh is the capital city of Saudi Arabia, known for its modern architecture and economic significance.
+
+3
+Which country is known as the Land of the Midnight Sun?
+    Norway
+    Sweden
+    Finland
+    Iceland
+1
+Explanation: Norway is known as the Land of the Midnight Sun because parts of it experience 24-hour daylight during the summer.
+
+4
+What is the official language of Iran?
+    Arabic
+    Turkish
+    Persian
+    Kurdish
+3
+Explanation: Persian, also known as Farsi, is the official language of Iran.
+
+5
+Which country is the largest producer of natural gas?
+    United States
+    Russia
+    Qatar
+    Iran
+2
+Explanation: Russia is the largest producer of natural gas, with vast reserves and extensive production infrastructure.
+
+6
+What is the capital of Argentina?
+    Buenos Aires
+    Cordoba
+    Rosario
+    Mendoza
+1
+Explanation: Buenos Aires is the capital city of Argentina, known for its European-style architecture and vibrant culture.
+
+7
+Which country is known as the Land of the Thunder Dragon?
+    Nepal
+    Bhutan
+    Tibet
+    Mongolia
+2
+Explanation: Bhutan is known as the Land of the Thunder Dragon, a reference to its local name, Druk Yul.
+
+8
+What is the official language of Kenya?
+    Swahili
+    English
+    French
+    Arabic
+1
+Explanation: Swahili is one of the official languages of Kenya, widely spoken alongside English.
+
+9
+Which country is the largest producer of gold?
+    South Africa
+    China
+    Australia
+    Russia
+2
+Explanation: China is the largest producer of gold, with significant mining operations across the country.
+
+10
+What is the capital of Turkey?
+    Istanbul
+    Ankara
+    Izmir
+    Antalya
+2
+Explanation: Ankara is the capital city of Turkey, while Istanbul is the largest city and economic hub.
+
+11
+Which country is known for its pyramids?
+    Mexico
+    Egypt
+    Peru
+    Sudan
+2
+Explanation: Egypt is famous for its ancient pyramids, including the Great Pyramid of Giza.
+
+12
+What is the official language of Israel?
+    Arabic
+    Hebrew
+    English
+    French
+2
+Explanation: Hebrew is the official language of Israel, used in government, media, and education.
+
+13
+Which country is the largest producer of cocoa?
+    Ghana
+    Ivory Coast
+    Nigeria
+    Brazil
+2
+Explanation: Ivory Coast is the largest producer of cocoa, accounting for a significant portion of global production.
+
+14
+What is the capital of Thailand?
+    Bangkok
+    Phuket
+    Chiang Mai
+    Pattaya
+1
+Explanation: Bangkok is the capital city of Thailand, known for its vibrant street life and cultural landmarks.
+
+15
+Which country is known as the Land of Smiles?
+    Japan
+    Thailand
+    Philippines
+    Vietnam
+2
+Explanation: Thailand is often referred to as the Land of Smiles due to the friendly and welcoming nature of its people.
+
+16
+What is the capital of Nigeria?
+    Lagos
+    Abuja
+    Kano
+    Ibadan
+2
+Explanation: Abuja is the capital city of Nigeria, while Lagos is the largest city and economic center.
+
+17
+Which country is the largest producer of diamonds?
+    Russia
+    Botswana
+    Canada
+    South Africa
+1
+Explanation: Russia is the largest producer of diamonds, with extensive mining operations in Siberia.
+
+18
+What is the official language of Afghanistan?
+    Pashto
+    Dari
+    Urdu
+    Arabic
+2
+Explanation: Dari, a variety of Persian, is one of the official languages of Afghanistan, alongside Pashto.
+
+19
+Which country is known as the Land of the Rising Sun?
+    China
+    Japan
+    South Korea
+    Thailand
+2
+Explanation: Japan is called the Land of the Rising Sun because it is located to the east of the Asian continent, where the sun rises.
+
+20
+What is the capital of Brazil?
+    Rio de Janeiro
+    São Paulo
+    Brasília
+    Salvador
+3
+Explanation: Brasília is the capital city of Brazil, designed by architect Oscar Niemeyer and inaugurated in 1960.

@@ -1,0 +1,246 @@
+{
+  "category": "geopolitical",
+  "difficulty": "hard",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "Which country has the most UNESCO World Heritage Sites?",
+      "options": [
+        "China",
+        "Italy",
+        "Spain",
+        "Germany"
+      ],
+      "answer_index": 2,
+      "explanation": "Italy has the most UNESCO World Heritage Sites, with over 55 sites recognized for their cultural and natural significance."
+    },
+    {
+      "id": 2,
+      "prompt": "What is the capital of Kazakhstan?",
+      "options": [
+        "Almaty",
+        "Astana",
+        "Shymkent",
+        "Karaganda"
+      ],
+      "answer_index": 2,
+      "explanation": "Astana, now known as Nur-Sultan, is the capital city of Kazakhstan, known for its futuristic architecture."
+    },
+    {
+      "id": 3,
+      "prompt": "Which country is the largest producer of uranium?",
+      "options": [
+        "Canada",
+        "Australia",
+        "Kazakhstan",
+        "Russia"
+      ],
+      "answer_index": 3,
+      "explanation": "Kazakhstan is the largest producer of uranium, supplying a significant portion of the world's uranium."
+    },
+    {
+      "id": 4,
+      "prompt": "What is the official language of Ethiopia?",
+      "options": [
+        "Amharic",
+        "Oromo",
+        "Tigrinya",
+        "Somali"
+      ],
+      "answer_index": 1,
+      "explanation": "Amharic is the official language of Ethiopia, used in government and education."
+    },
+    {
+      "id": 5,
+      "prompt": "Which country is known as the Land of the White Elephant?",
+      "options": [
+        "Thailand",
+        "India",
+        "Sri Lanka",
+        "Myanmar"
+      ],
+      "answer_index": 1,
+      "explanation": "Thailand is known as the Land of the White Elephant due to the cultural and historical significance of white elephants in Thai society."
+    },
+    {
+      "id": 6,
+      "prompt": "What is the capital of Uzbekistan?",
+      "options": [
+        "Tashkent",
+        "Samarkand",
+        "Bukhara",
+        "Khiva"
+      ],
+      "answer_index": 1,
+      "explanation": "Tashkent is the capital city of Uzbekistan, known for its mix of modern and Soviet-era architecture."
+    },
+    {
+      "id": 7,
+      "prompt": "Which country is the largest producer of platinum?",
+      "options": [
+        "South Africa",
+        "Russia",
+        "Canada",
+        "Zimbabwe"
+      ],
+      "answer_index": 1,
+      "explanation": "South Africa is the largest producer of platinum, with extensive mining operations."
+    },
+    {
+      "id": 8,
+      "prompt": "What is the official language of Lebanon?",
+      "options": [
+        "Arabic",
+        "French",
+        "English",
+        "Armenian"
+      ],
+      "answer_index": 1,
+      "explanation": "Arabic is the official language of Lebanon, used in government, media, and education."
+    },
+    {
+      "id": 9,
+      "prompt": "Which country is known as the Land of the Long White Cloud?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "Fiji",
+        "Samoa"
+      ],
+      "answer_index": 2,
+      "explanation": "New Zealand is known as the Land of the Long White Cloud, a translation of its Maori name, Aotearoa."
+    },
+    {
+      "id": 10,
+      "prompt": "What is the capital of Azerbaijan?",
+      "options": [
+        "Baku",
+        "Ganja",
+        "Sumqayit",
+        "Mingachevir"
+      ],
+      "answer_index": 1,
+      "explanation": "Baku is the capital city of Azerbaijan, known for its medieval walled city and modern skyline."
+    },
+    {
+      "id": 11,
+      "prompt": "Which country is the largest producer of tea?",
+      "options": [
+        "India",
+        "China",
+        "Sri Lanka",
+        "Kenya"
+      ],
+      "answer_index": 2,
+      "explanation": "China is the largest producer of tea, with a long history of tea cultivation and consumption."
+    },
+    {
+      "id": 12,
+      "prompt": "What is the official language of Afghanistan?",
+      "options": [
+        "Pashto",
+        "Dari",
+        "Urdu",
+        "Arabic"
+      ],
+      "answer_index": 2,
+      "explanation": "Dari, a variety of Persian, is one of the official languages of Afghanistan, alongside Pashto."
+    },
+    {
+      "id": 13,
+      "prompt": "Which country is known as the Land of the Free?",
+      "options": [
+        "United States",
+        "Canada",
+        "Thailand",
+        "Australia"
+      ],
+      "answer_index": 3,
+      "explanation": "Thailand is often referred to as the Land of the Free because it is the only Southeast Asian country never to have been colonized by a European power."
+    },
+    {
+      "id": 14,
+      "prompt": "What is the capital of Myanmar?",
+      "options": [
+        "Yangon",
+        "Mandalay",
+        "Naypyidaw",
+        "Bago"
+      ],
+      "answer_index": 3,
+      "explanation": "Naypyidaw is the capital city of Myanmar, officially designated as the capital in 2005."
+    },
+    {
+      "id": 15,
+      "prompt": "Which country is the largest producer of rubber?",
+      "options": [
+        "Thailand",
+        "Indonesia",
+        "Malaysia",
+        "Vietnam"
+      ],
+      "answer_index": 1,
+      "explanation": "Thailand is the largest producer of natural rubber, with extensive rubber plantations."
+    },
+    {
+      "id": 16,
+      "prompt": "What is the official language of Algeria?",
+      "options": [
+        "Arabic",
+        "French",
+        "Berber",
+        "Spanish"
+      ],
+      "answer_index": 1,
+      "explanation": "Arabic is the official language of Algeria, used in government, media, and education."
+    },
+    {
+      "id": 17,
+      "prompt": "Which country is known as the Land of the Incas?",
+      "options": [
+        "Mexico",
+        "Peru",
+        "Bolivia",
+        "Ecuador"
+      ],
+      "answer_index": 2,
+      "explanation": "Peru is known as the Land of the Incas, home to the ancient Inca civilization and the famous site of Machu Picchu."
+    },
+    {
+      "id": 18,
+      "prompt": "What is the capital of Mongolia?",
+      "options": [
+        "Ulaanbaatar",
+        "Erdenet",
+        "Darkhan",
+        "Choibalsan"
+      ],
+      "answer_index": 1,
+      "explanation": "Ulaanbaatar is the capital city of Mongolia, known for its cold winters and historical significance."
+    },
+    {
+      "id": 19,
+      "prompt": "Which country is the largest producer of copper?",
+      "options": [
+        "Chile",
+        "Peru",
+        "China",
+        "United States"
+      ],
+      "answer_index": 1,
+      "explanation": "Chile is the largest producer of copper, with vast mining operations in the Atacama Desert."
+    },
+    {
+      "id": 20,
+      "prompt": "What is the official language of Morocco?",
+      "options": [
+        "Arabic",
+        "French",
+        "Berber",
+        "Spanish"
+      ],
+      "answer_index": 1,
+      "explanation": "Arabic is the official language of Morocco, used in government, media, and education."
+    }
+  ]
+}

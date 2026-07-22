@@ -1,0 +1,246 @@
+{
+  "category": "general_knowledge",
+  "difficulty": "easy",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "What is the capital of France?",
+      "options": [
+        "Paris",
+        "London",
+        "Berlin",
+        "Madrid"
+      ],
+      "answer_index": 1,
+      "explanation": "Paris is the capital and most populous city of France, known for its historical landmarks and cultural significance."
+    },
+    {
+      "id": 2,
+      "prompt": "What is the largest planet in our solar system?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "answer_index": 3,
+      "explanation": "Jupiter is the largest planet in our solar system, with a diameter of about 142,984 km, and it has a massive gravitational pull."
+    },
+    {
+      "id": 3,
+      "prompt": "Who wrote 'Hamlet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Mark Twain",
+        "J.K. Rowling"
+      ],
+      "answer_index": 2,
+      "explanation": "William Shakespeare, an English playwright and poet, wrote 'Hamlet', one of his most famous tragedies."
+    },
+    {
+      "id": 4,
+      "prompt": "What is the chemical symbol for water?",
+      "options": [
+        "H2O",
+        "CO2",
+        "O2",
+        "NaCl"
+      ],
+      "answer_index": 1,
+      "explanation": "H2O is the chemical formula for water, consisting of two hydrogen atoms and one oxygen atom, essential for all known forms of life."
+    },
+    {
+      "id": 5,
+      "prompt": "Which country is known as the Land of the Rising Sun?",
+      "options": [
+        "China",
+        "Japan",
+        "South Korea",
+        "Thailand"
+      ],
+      "answer_index": 2,
+      "explanation": "Japan is called the Land of the Rising Sun because it is located to the east of the Asian continent, where the sun rises."
+    },
+    {
+      "id": 6,
+      "prompt": "What is the smallest prime number?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "answer_index": 2,
+      "explanation": "2 is the smallest prime number and the only even prime number, as it is divisible only by 1 and itself."
+    },
+    {
+      "id": 7,
+      "prompt": "Who painted the Mona Lisa?",
+      "options": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Claude Monet"
+      ],
+      "answer_index": 3,
+      "explanation": "Leonardo da Vinci, an Italian Renaissance artist, painted the Mona Lisa, which is renowned for its artistic mastery and enigmatic expression."
+    },
+    {
+      "id": 8,
+      "prompt": "What is the hardest natural substance on Earth?",
+      "options": [
+        "Gold",
+        "Iron",
+        "Diamond",
+        "Platinum"
+      ],
+      "answer_index": 3,
+      "explanation": "Diamond is the hardest natural substance known, with a Mohs hardness scale rating of 10, making it highly resistant to scratching."
+    },
+    {
+      "id": 9,
+      "prompt": "Which planet is known as the Red Planet?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "answer_index": 2,
+      "explanation": "Mars is known as the Red Planet due to its reddish appearance, caused by iron oxide (rust) on its surface."
+    },
+    {
+      "id": 10,
+      "prompt": "What is the largest ocean on Earth?",
+      "options": [
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Arctic Ocean",
+        "Pacific Ocean"
+      ],
+      "answer_index": 4,
+      "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth, covering more than 63 million square miles."
+    },
+    {
+      "id": 11,
+      "prompt": "Who discovered penicillin?",
+      "options": [
+        "Marie Curie",
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Isaac Newton"
+      ],
+      "answer_index": 2,
+      "explanation": "Alexander Fleming discovered penicillin in 1928, which became the first widely used antibiotic and revolutionized medicine."
+    },
+    {
+      "id": 12,
+      "prompt": "What is the main ingredient in guacamole?",
+      "options": [
+        "Tomato",
+        "Avocado",
+        "Onion",
+        "Pepper"
+      ],
+      "answer_index": 2,
+      "explanation": "Avocado is the main ingredient in guacamole, a traditional Mexican dip known for its creamy texture and rich flavor."
+    },
+    {
+      "id": 13,
+      "prompt": "Which element has the chemical symbol 'O'?",
+      "options": [
+        "Oxygen",
+        "Gold",
+        "Silver",
+        "Iron"
+      ],
+      "answer_index": 1,
+      "explanation": "'O' is the chemical symbol for oxygen, a vital element for respiration in most living organisms."
+    },
+    {
+      "id": 14,
+      "prompt": "What is the tallest mountain in the world?",
+      "options": [
+        "K2",
+        "Kangchenjunga",
+        "Mount Everest",
+        "Lhotse"
+      ],
+      "answer_index": 3,
+      "explanation": "Mount Everest is the tallest mountain in the world, standing at 8,848 meters (29,029 feet) above sea level."
+    },
+    {
+      "id": 15,
+      "prompt": "Who was the first President of the United States?",
+      "options": [
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "George Washington",
+        "John Adams"
+      ],
+      "answer_index": 3,
+      "explanation": "George Washington was the first President of the United States, serving from 1789 to 1797, and is often called the \"Father of His Country.\""
+    },
+    {
+      "id": 16,
+      "prompt": "What is the currency of Japan?",
+      "options": [
+        "Yen",
+        "Dollar",
+        "Euro",
+        "Pound"
+      ],
+      "answer_index": 1,
+      "explanation": "The yen is the official currency of Japan, symbolized by ¥ and known for its stability."
+    },
+    {
+      "id": 17,
+      "prompt": "Which planet is closest to the Sun?",
+      "options": [
+        "Venus",
+        "Earth",
+        "Mercury",
+        "Mars"
+      ],
+      "answer_index": 3,
+      "explanation": "Mercury is the closest planet to the Sun, orbiting at an average distance of about 58 million kilometers (36 million miles)."
+    },
+    {
+      "id": 18,
+      "prompt": "What is the largest mammal in the world?",
+      "options": [
+        "Elephant",
+        "Blue Whale",
+        "Giraffe",
+        "Hippopotamus"
+      ],
+      "answer_index": 2,
+      "explanation": "The blue whale is the largest mammal in the world, reaching lengths of up to 100 feet and weights of up to 200 tons."
+    },
+    {
+      "id": 19,
+      "prompt": "Who wrote 'Pride and Prejudice'?",
+      "options": [
+        "Jane Austen",
+        "Emily Brontë",
+        "Charles Dickens",
+        "George Orwell"
+      ],
+      "answer_index": 1,
+      "explanation": "Jane Austen, an English novelist, wrote 'Pride and Prejudice', a classic novel of manners published in 1813."
+    },
+    {
+      "id": 20,
+      "prompt": "What is the capital of Australia?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Brisbane"
+      ],
+      "answer_index": 3,
+      "explanation": "Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne."
+    }
+  ]
+}
