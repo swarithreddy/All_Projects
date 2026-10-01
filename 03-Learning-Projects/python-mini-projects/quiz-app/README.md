@@ -1,32 +1,20 @@
 # Quiz App
 
-A simple command-line quiz application with multiple-choice questions.
+A four-question, multiple-choice quiz that runs in the terminal and reports a final score.
 
-\#\# Features
+## Requirements
 
-- 4 pre-defined questions covering general knowledge
-- Multiple choice answers (A/B/C/D)
-- Score tracking and display
-- Immediate feedback for each answer
+- Python 3
+- No third-party packages
 
-\#\# Requirements
+## Run
 
-- Python 3.x
-- No external dependencies
+```bash
+python main.py
+```
 
-\#\# How to Run
+Enter `A`, `B`, `C`, or `D` for each question. The app gives immediate correct/incorrect feedback and displays the score at the end.
 
-1. Run `python main.py`
-2. Answer each question by typing A, B, C, or D
-3. View your final score at the end
+## Customize
 
-\#\# Sample Questions
-
-- What is the capital of France?
-- What is 2 + 2?
-- What is the largest planet in our solar system?
-- Who wrote 'Hamlet'?
-
-\#\# Customization
-
-You can modify the `questions` list in the code to add more questions or change existing ones.
+Edit the `questions` list in `main.py` to change prompts, options, or the correct answer. The current question set is stored in the source code; there is no external question file or persistent score history.

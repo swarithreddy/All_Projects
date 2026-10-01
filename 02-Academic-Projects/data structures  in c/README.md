@@ -1,70 +1,58 @@
-Task Tactics
+# Task Tactics
 
-A console application combining a To‑Do List and Tic‑Tac‑Toe game.
+A terminal-based C program with two menu-driven activities: a linked-list to-do list and a two-player Tic-Tac-Toe game.
 
-Originally authored by R. Swarith Reddy (23911A05J5) as part of a data
-structures course project, Task Tactics is written in plain C and demonstrates
-the use of linked lists and simple game logic.
+## Features
 
-🚀 Features
+- Add, list, and delete in-memory tasks by generated ID
+- Play local two-player Tic-Tac-Toe with win and draw detection
+- Free allocated task nodes when the program exits
 
-- ✅ To‑Do List
-  - Add tasks with unique IDs and descriptions
-  - Delete tasks by ID
-  - Display current task list
-  - Tasks are stored in a singly linked list and freed on exit
+## Technology
 
-- 🎮 Tic‑Tac‑Toe Game
-  - Two‑player local game played in the terminal
-  - Automatic win/draw detection
-  - Board updates after every move
+- C and the standard library
+- Singly linked list for task storage
+- Console input/output
 
-🛠️ Getting Started
+## Project Structure
 
-Prerequisites
+```text
+data structures  in c/
+├── docs/
+│   └── design.md
+├── src/
+│   └── tasktactics.c
+├── LICENSE
+└── README.md
+```
 
-- A C compiler such as `gcc` (MinGW, TDM‑GCC, or similar) installed and on your
-  `PATH`.
-- A terminal (Command Prompt, PowerShell, Git Bash, etc.).
+## Requirements
 
-Building
+- A C compiler such as GCC (MinGW-w64 on Windows)
+- A terminal
 
-```sh
-cd "c:/Users/swarith reddy/OneDrive/Desktop/gtidemo/All_Projects/data structures  in c/"
+## Build and Run
+
+Run these commands from the project directory:
+
+```bash
 gcc src/tasktactics.c -o tasktactics
 ```
 
-Running
+On Windows, run `tasktactics.exe`; on macOS or Linux, run:
 
-```sh
+```bash
 ./tasktactics
 ```
 
-Follow the on‑screen menus to manage your tasks or play Tic‑Tac‑Toe.
+Use the numbered menu. Tic-Tac-Toe rows and columns are numbered `0` through `2`.
 
-📂 Repository Structure
+## Notes
 
-```
-data structures  in c/
-├── .gitignore
-├── LICENSE
-├── README.md
-├── docs/
-│   └── design.md         <- high‑level algorithm description
-└── src/
-    └── tasktactics.c     <- main source code
-```
+- Tasks exist only in memory and are lost when the program exits.
+- The game supports two local players and has no computer opponent.
+- See [docs/design.md](docs/design.md) for the design notes.
 
-📄 Additional Documentation
+## License
 
-See `docs/design.md` for the full algorithm breakdown that was originally
-provided in the Word document.
-
-🤝 Contributing
-
-Feel free to open issues or submit pull requests if you'd like to extend or
-refactor the code (e.g. add persistence, a GUI, or AI opponent).
-
-📜 License
-
-This project is released under the [MIT License](LICENSE).
+See [LICENSE](LICENSE).

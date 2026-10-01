@@ -1,30 +1,26 @@
-# Password Manager
+# Password Manager Demo
 
-A simple command-line password manager to store and retrieve passwords securely.
+A small terminal program that appends website/password pairs to `passwords.txt` and can copy a matching password to the clipboard.
 
-\#\# Features
+## Requirements
 
-- Save passwords for different websites
-- Retrieve passwords and automatically copy to clipboard
-- Simple text-based storage (for educational purposes only)
+- Python 3
+- `pyperclip`
 
-\#\# Requirements
+Install the dependency:
 
-- Python 3.x
-- `pyperclip` library for clipboard functionality
-
-Install dependencies:
-```
-pip install pyperclip
+```bash
+python -m pip install pyperclip
 ```
 
-\#\# How to Run
+## Run
 
-1. Run `python main.py`
-2. Choose option 1 to save a password
-3. Choose option 2 to retrieve a password (it will be copied to clipboard)
-4. Choose option 3 to exit
+```bash
+python main.py
+```
 
-\#\# Security Note
+Choose **Save Password**, **Get Password**, or **Exit**. Saved records are stored in `passwords.txt` in the current working directory. A password must be saved before the lookup option can read that file.
 
-This is a basic implementation for learning purposes. For real password management, use established password managers with proper encryption.
+## Security Warning
+
+This is an educational example, not a secure password manager. It stores passwords as plaintext, has no encryption or master password, and performs a simple substring lookup. Do not store real credentials in it. Use a reputable password manager for personal accounts.

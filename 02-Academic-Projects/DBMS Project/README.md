@@ -1,53 +1,51 @@
-Enquiry Transfer System
+# E-commerce Database Project
 
-This repository contains a simple database management system designed for
-an e-commerce platform, created as a student project by Neela Sai, Reddy
-Swarith Reddy, and Kummari Shiva Charan.
+A student database project that models a small e-commerce workflow with users, items, orders, memberships, staff, and staff ratings. The SQL file includes sample records, queries, and views.
 
-📋 Overview
+## Schema Overview
 
-The system manages the following entities:
+| Table | Purpose |
+|-------|---------|
+| `users` | Customer contact and address details |
+| `item` | Product price, stock, and rating |
+| `orders` | Customer purchases and totals |
+| `membership` | Customer membership validity dates |
+| `staff` | Staff names, departments, and salaries |
+| `rating` | Customer ratings for staff |
 
-- Users (personal data, addresses, contact info)
-- Items (name, price, stock, rating)
-- Orders (user purchases with quantities and total amount)
-- Memberships (user subscriptions with expiry dates)
-- Ratings (user feedback for staff members)
-- Staff (employees with department and salary information)
+## Project Structure
 
-The accompanying `dbms.sql` file contains the schema and sample queries.
-
-📁 Structure
-
-```
+```text
 DBMS Project/
-├── .gitignore
-├── README.md
-├── dbms.sql               <- SQL script for tables and sample data
+├── dbms.sql                 # Database, tables, sample data, queries, and views
 ├── docs/
-│   ├── DBMS_Project.docx  <- original report
-│   ├── DBMS_Project.pdf   <- exported PDF copy
-│   └── design.md          <- extracted summary of design
-└── "dbms outputs"/       <- output files from execution (keep if needed)
+│   ├── design.md
+│   ├── DBMS_Project.docx
+│   └── DBMS_Project.pdf
+├── dbms outputs/            # Saved output artifacts
+└── README.md
 ```
 
-🛠 Using the SQL script
+## Requirements
 
-Import `dbms.sql` into your favorite database server (MySQL, PostgreSQL,
-SQLite, etc.) and run the provided queries to create tables and test data.
+- MySQL-compatible database server and command-line client
 
-Example using SQLite:
+The script uses MySQL statements such as `CREATE DATABASE`, `USE`, and `SHOW TABLES`; it is not directly runnable as SQLite or PostgreSQL SQL.
 
-```sh
-sqlite3 ecommerce.db < dbms.sql
-``` 
+## Run the SQL
 
-🤝 Contributions
+From a terminal with the MySQL client installed:
 
-Feel free to fork this project and extend the schema or provide a front-end
-interface. Pull requests and issue reports are welcome.
+```bash
+mysql -u root -p < dbms.sql
+```
 
-📜 License
+The script creates and selects the `dbms` database, builds tables, inserts sample data, runs example queries, and creates views.
 
-This project does not include a formal license—add one if you plan to share
-publicly.
+## Important Note
+
+In `dbms.sql`, the `rating` table is created with a foreign key to `staff` before the `staff` table is created. MySQL may reject that table definition. If it does, move the `CREATE TABLE staff` statement above `CREATE TABLE rating`, then rerun the script against a clean database.
+
+## License
+
+No license file is included for this project.

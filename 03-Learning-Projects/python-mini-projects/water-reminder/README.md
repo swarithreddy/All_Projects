@@ -1,36 +1,32 @@
 # Water Reminder
 
-A desktop notification app that reminds you to drink water at regular intervals.
+A small Python script that sends a desktop notification, waits one hour, and repeats while the process is running.
 
-\#\# Features
+## Requirements
 
-- Sends desktop notifications every hour
-- Customizable reminder message
-- Runs continuously in the background
-- Uses system notifications
+- Python 3
+- `plyer`
+- Desktop notifications enabled in the operating system
 
-\#\# Requirements
+Install the dependency:
 
-- Python 3.x
-- `plyer` library for notifications
-
-Install dependencies:
-```
-pip install plyer
+```bash
+python -m pip install plyer
 ```
 
-\#\# How to Run
+## Run
 
-1. Run `python main.py`
-2. The app will start sending notifications every hour
-3. Keep the terminal window open to continue receiving reminders
+```bash
+python main.py
+```
 
-\#\# Customization
+Keep the process running to receive reminders. Stop it with `Ctrl+C` in the terminal.
 
-- Change the reminder interval by modifying `time.sleep(3600)` (3600 seconds = 1 hour)
-- Modify the notification title and message in the `notification.notify()` call
-- For testing, uncomment the `time.sleep(3)` line to get reminders every 3 seconds
+## Customize
 
-\#\# Note
+Edit the notification title, message, and `time.sleep(3600)` interval in `main.py`. The current title and message are fixed in the source; the script does not provide a settings interface.
 
-The app uses the `plyer` library which supports notifications on Windows, macOS, and Linux. Make sure your system allows notifications from Python applications.
+## Limitations
+
+- This is a foreground Python process, not a configured background service.
+- The script sends its first notification immediately, then waits an hour before the next one.

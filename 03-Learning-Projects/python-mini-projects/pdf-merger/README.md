@@ -1,32 +1,31 @@
 # PDF Merger
 
-A graphical user interface (GUI) application to merge multiple PDF files into a single PDF.
+A small Tkinter desktop application for selecting PDF files, combining them with `pypdf`, and saving the result to a chosen path.
 
-\#\# Features
+## Requirements
 
-- Select multiple PDF files using file dialog
-- Merge PDFs in the order they were selected
-- Save the merged PDF to a chosen location
-- User-friendly tkinter interface
+- Python 3
+- Tkinter (included with many Python installations; on some Linux distributions it is a separate package)
+- `pypdf`
 
-\#\# Requirements
+Install the Python dependency:
 
-- Python 3.x
-- `tkinter` (usually included with Python)
-- `pypdf` library
-
-Install dependencies:
-```
-pip install pypdf
+```bash
+python -m pip install pypdf
 ```
 
-\#\# How to Run
+## Run
 
-1. Run `python main.py`
-2. Click "Select PDF Files" to choose the PDFs to merge
-3. Click "Merge PDFs" to combine them
-4. Choose where to save the merged PDF
+From this project directory:
 
-\#\# Note
+```bash
+python main.py
+```
 
-The application uses tkinter for the GUI, which is included with most Python installations on Windows, macOS, and Linux.
+Select PDFs in the file dialog, then choose **Merge PDFs** and a destination filename. The selected PDF paths are passed to `PdfWriter` in the order shown in the list.
+
+## Limitations
+
+- The app does not reorder or edit pages individually.
+- Input files must be readable PDFs. Keep backups of important documents before merging.
+- No automated tests are configured.

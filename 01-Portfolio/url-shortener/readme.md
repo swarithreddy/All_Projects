@@ -1,301 +1,197 @@
-# URL Shortener — Step-by-Step Explanation (Interview-Ready)
+# URL Shortener
 
-This document explains your project from first principles to production features in simple language you can revise quickly before interviews.
+A small full-stack URL shortener built with **Node.js, Express, and MongoDB**. Create short links from a browser form or JSON API, optionally choose a custom alias, and redirect visitors to the saved destination.
 
----
+## Table of Contents
 
-## 1) What is a URL Shortener?
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [How It Works](#how-it-works)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+- [Data Model](#data-model)
+- [Configuration](#configuration)
+- [Known Limitations](#known-limitations)
+- [Testing](#testing)
 
-A URL shortener converts a **long link** like:
+## Overview
 
-```
-https://www.google.com/search?q=very+long+query...
-```
+The app serves a simple web page for shortening links and an Express API. Short links are stored in MongoDB. Opening a short link looks up its destination, increments its click count, and redirects the visitor.
 
-into a **small link** like:
+The application listens on port `3000` and connects to a local MongoDB instance.
 
-```
-http://localhost:3000/Ab3kP
-```
+## Features
 
-When someone opens the short link, they are **redirected** to the original long link.
+- Generate short codes using a Base62 alphabet
+- Choose an optional custom alias
+- Reuse an existing short link for a repeated destination when no alias is supplied
+- Validate destination URLs before saving
+- Redirect short links and count visits
+- Set an optional expiry period through the API
+- Reject expired links and periodically remove expired records
+- Limit requests to 20 per IP per 15-minute window
+- Serve a basic HTML form from Express
 
-Famous examples: TinyURL, Bitly.
+## Technology Stack
 
----
+| Area | Technology |
+|------|------------|
+| Runtime | Node.js (CommonJS) |
+| HTTP server | Express 5 |
+| Database | MongoDB with Mongoose |
+| Rate limiting | `express-rate-limit` |
+| Expiration cleanup | `node-cron` |
+| Frontend | HTML, CSS, and browser Fetch API |
 
-## 2) What Problems Are We Solving?
+## How It Works
 
-| Problem                     | Our Solution                       |
-| --------------------------- | ---------------------------------- |
-| Long URLs are hard to share | Generate short codes using Base62  |
-| Two users may get same code | Collision handling + DB uniqueness |
-| Links may expire            | Expiry date stored in DB           |
-| Need usage data             | Click counter (analytics)          |
-| Bots may spam               | Rate limiting                      |
-| DB may fill with old links  | Cron cleanup job                   |
-| Users want custom names     | Custom alias support               |
-| Invalid links               | URL validation                     |
-
----
-
-## 3) Tech Stack
-
-* Backend: **Express.js**
-* Database: **MongoDB**
-* Scheduler: **node-cron**
-* Security: **express-rate-limit**
-* Frontend: HTML + Fetch API
-
----
-
-## 4) High-Level Working (Big Picture)
-
-```
-User → POST /shorten → Save in DB → Get short URL
-User → GET /:code → Read DB → Increase clicks → Redirect
-```
-
----
-
-## 5) Database Design (Very Important for Interviews)
-
-Collection: `urls`
-
-| Field     | Type            | Purpose               |
-| --------- | --------------- | --------------------- |
-| shortCode | String (unique) | The small code in URL |
-| longUrl   | String          | Original link         |
-| clicks    | Number          | Analytics counter     |
-| expiry    | Date            | Auto invalidation     |
-| createdAt | Date            | Timestamp             |
-
-Why unique index on `shortCode`?
-→ Prevent duplicates at database level.
-
----
-
-## 6) Base62 Encoding (How short codes are made)
-
-We convert numbers to characters:
-
-```
-a-z → 26
-A-Z → 26
-0-9 → 10
-Total = 62 characters
+```mermaid
+flowchart LR
+  B[Browser form or API client] -->|POST /shorten| E[Express server]
+  E --> V[Validate URL and select code]
+  V --> M[(MongoDB)]
+  M -->|Short URL response| B
+  B -->|GET /code| E
+  E -->|Find record and increment clicks| M
+  E -->|Redirect| D[Destination URL]
+  C[Hourly cleanup job] -->|Delete expired records| M
 ```
 
-Large numbers become small strings.
+Generated codes are created by Base62-encoding a value based on the current time plus a random offset. The server checks MongoDB for an existing code before saving it.
 
-Example:
+## Project Structure
 
+```text
+url-shortener/
+├── config/
+│   └── db.js                 # MongoDB connection
+├── jobs/
+│   └── cleanupExpired.js     # Hourly cleanup of expired links
+├── middleware/
+│   └── rateLimiter.js        # Global request rate limit
+├── models/
+│   └── urlModel.js           # Mongoose URL schema
+├── public/
+│   └── index.html            # Browser form
+├── routes/
+│   └── urlRoutes.js          # Create, redirect, and analytics routes
+├── utils/
+│   ├── base62.js             # Base62 encoder
+│   ├── generateShortCode.js  # Short-code generator
+│   └── validateUrl.js        # URL validation
+├── server.js                 # Application entry point
+├── package.json
+└── package-lock.json
 ```
-999999 → "g7K"
+
+## Requirements
+
+- Node.js and npm
+- MongoDB running locally at `mongodb://127.0.0.1:27017`
+
+## Installation
+
+From the project directory, install dependencies:
+
+```bash
+npm install
 ```
 
-This is why URLs are short.
+Start MongoDB, then start the application:
 
----
+```bash
+node server.js
+```
 
-## 7) API Endpoints
+The server listens on port `3000`. Open [http://localhost:3000](http://localhost:3000) in a browser to use the form.
 
-### POST `/shorten`
+## Usage
 
-Input:
+1. Enter a destination URL including its scheme, such as `https://example.com/page`.
+2. Optionally enter a custom alias.
+3. Select **Shorten**.
+4. Open the generated short link to redirect to the destination.
+
+The browser form sends `longUrl` and `customCode`. Expiry is currently available only through the API using `expiryDays`.
+
+## API
+
+### Create a short URL
+
+`POST /shorten`
+
+Request body:
 
 ```json
 {
-  "longUrl": "...",
-  "customCode": "...",
-  "expiryDays": 2
+  "longUrl": "https://example.com/articles/getting-started",
+  "customCode": "getting-started",
+  "expiryDays": 30
 }
 ```
 
-Flow:
+`customCode` and `expiryDays` are optional. Omit `customCode` or send an empty value to generate a code.
 
-1. Validate URL
-2. If custom alias → check availability
-3. Else → generate Base62 code
-4. Handle collision (retry)
-5. Save to DB
-6. Return short URL
+Successful response:
 
----
-
-### GET `/:code` (Redirect)
-
-Flow:
-
-1. Find code in DB
-2. If not found → 404
-3. If expired → 410
-4. Increase clicks
-5. Redirect to long URL
-
----
-
-### GET `/analytics/:code`
-
-Returns:
-
-* longUrl
-* clicks
-* created time
-* expiry
-
----
-
-## 8) Collision Handling (Real System Concept)
-
-Why collision happens?
-Two requests at same millisecond may generate same number.
-
-Solution:
-
-* Unique index in DB
-* While loop retry until unique code found
-
-This is **production thinking**.
-
----
-
-## 9) Duplicate Long URL Detection
-
-If same long URL already exists:
-→ Return existing short URL instead of creating new one.
-
-Saves space and keeps system clean.
-
----
-
-## 10) Custom Alias
-
-User can request:
-
-```
-/mycollege
+```json
+{
+  "shortUrl": "http://localhost:3000/getting-started"
+}
 ```
 
-We check if already taken.
-If free → assign.
+If the same destination has already been shortened without a custom alias, the existing short URL is returned with the message `URL already shortened`.
 
----
+Common errors include `400` for an invalid URL or an already-used custom alias, and `500` for a server error.
 
-## 11) Rate Limiting (Security)
+### Redirect to a destination
 
-Using **express-rate-limit**:
+`GET /:code`
 
-* 20 requests per 15 minutes per IP
-* Prevents bots/spam attacks
+A valid, unexpired code increments its click count and responds with an HTTP redirect. An unknown code returns `404`; an expired link returns `410`.
 
----
+### Read link analytics
 
-## 12) Cleanup Job (Automation)
+`GET /analytics/:code`
 
-Using **node-cron**:
+This route is intended to return the stored URL record, including destination, click count, creation time, and expiry. It is currently affected by the route-order limitation described below.
 
-Every hour:
+## Data Model
 
-* Delete expired links from **MongoDB**
+The Mongoose model stores URL documents with these fields:
 
-Keeps DB optimized.
+| Field | Type | Description |
+|-------|------|-------------|
+| `shortCode` | String | Required and unique short-link code |
+| `longUrl` | String | Required destination URL |
+| `clicks` | Number | Redirect count; defaults to `0` |
+| `expiry` | Date or `null` | Optional expiration time |
+| `createdAt` | Date | Automatically added by Mongoose timestamps |
+| `updatedAt` | Date | Automatically added by Mongoose timestamps |
 
----
+## Configuration
 
-## 13) Frontend
+The current implementation hard-codes these settings:
 
-Simple HTML page:
+- MongoDB URI: `mongodb://127.0.0.1:27017/urlShortener`
+- HTTP port: `3000`
+- Rate limit: 20 requests per IP per 15 minutes
+- Expired-link cleanup: once per hour
 
-* Enter URL
-* Optional alias
-* Calls API using `fetch`
-* Shows short link
+There is no environment-variable configuration yet.
 
----
+## Known Limitations
 
-## 14) Complete Flow (End to End)
+- The generic `GET /:code` route is registered before `GET /analytics/:code`. Express can match `/analytics/:code` as `/:code` first, so analytics requests may be treated as redirects for the code `analytics` and return `404` instead of analytics data.
+- The rate limiter is mounted globally and applies to static files, redirects, and API requests.
+- MongoDB is fixed to a local instance; remote database configuration is not provided.
+- Short-code collisions are checked before saving, but simultaneous requests are not retried after a database duplicate-key error.
+- The package's `test` script is a placeholder; no automated test suite is configured.
 
-```
-Browser UI
-   ↓
-Express Route
-   ↓
-Validation
-   ↓
-Generate Code
-   ↓
-MongoDB Save
-   ↓
-Return Short URL
-   ↓
-User Opens Short URL
-   ↓
-DB Lookup → Click++ → Redirect
-```
+## Testing
 
----
-
-## 15) Interview Questions You Can Now Answer
-
-**Q: How do you prevent short code collision?**
-DB unique index + retry generation loop.
-
-**Q: How do you scale this system?**
-
-* Move to Redis cache for reads
-* Use load balancer
-* Shard database
-* Pre-generate codes
-
-**Q: How do you handle expired links?**
-Expiry field + cron cleanup + runtime check.
-
-**Q: How do you stop abuse?**
-Rate limiter middleware.
-
-**Q: Why Base62?**
-Max characters in minimum length, URL-safe.
-
-**Q: How is analytics tracked?**
-Increment clicks on each redirect.
-
----
-
-## 16) Folder Structure (Mental Map)
-
-```
-config/db.js
-models/urlModel.js
-routes/urlRoutes.js
-utils/base62.js
-utils/generateShortCode.js
-utils/validateUrl.js
-middleware/rateLimiter.js
-jobs/cleanupExpired.js
-public/index.html
-server.js
-```
-
----
-
-## 17) What Makes This “Production-Grade”
-
-You didn’t just shorten URLs. You added:
-
-* Validation
-* Security
-* Collision safety
-* Analytics
-* Expiry
-* Cleanup automation
-* Custom aliases
-* Frontend
-
-That’s **system design thinking**, not just coding.
-
----
-
-## 18) One-Line Summary (for interviews)
-
-> “I built a full-stack URL shortener using Express and MongoDB with Base62 encoding, collision handling, analytics, custom aliases, rate limiting, and automated expiry cleanup to simulate a production-ready TinyURL/Bitly-like system.”
+No automated tests are currently configured. The `npm test` command in `package.json` is a placeholder that exits with an error. To check the app manually, start MongoDB and the server, create a link from the browser form, and open the short URL.
